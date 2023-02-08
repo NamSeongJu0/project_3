@@ -2,6 +2,8 @@
 
 @import "header_footer";
 
+
+// main_slide
 #main_slide {
     width: 100%;
     height: 500px;
@@ -9,10 +11,12 @@
     justify-content: center;
     align-items: center;
     background-image: url(../indeximg/bg.png);
+    margin-bottom: 100px;
 
     .slide {
         width: 1200px;
         height: 400px;
+        display: flex;
         background-color: aquamarine;
         overflow: hidden;
         position: relative;
@@ -70,6 +74,105 @@
                     }
                 }
             }        
+        }
+    }
+
+    .slide_btn {
+        width: 120px;
+        height: 50px;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .sb_c {
+            background-color: #333;
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 999;
+                border: 1px solid #333;
+                animation: sb_btn 0.5s ease;         
+            }
+        }
+
+        .sb {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            background-color: #ddd;
+        }
+    }
+}
+
+
+// category
+#Cate {
+    width: 100%;
+    height: auto;
+    background-color: cyan;
+
+    .cate {
+        width: 80%;
+        height: auto;
+        background-color: aliceblue;
+        margin: 0 auto;
+
+        h1 {
+            font-size: $font_h1;
+            text-align: center;
+        }
+
+        .catebox {
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .cate_box {
+                width: 200px;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+
+                a {
+                    width: 64px;
+                    height: 64px;
+                    margin-bottom: 20px;
+                }
+
+                &:nth-of-type(1) {
+                    background-color: #f9f1fe;
+                }
+
+                &:nth-of-type(2) {
+                    background-color: #fbf4ea;
+                }
+
+                &:nth-of-type(3) {
+                    background-color: #f4e6e5;
+                }
+
+                &:nth-of-type(4) {
+                    background-color: #e7f2f4;
+                }
+            }
         }
     }
 }
