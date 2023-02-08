@@ -31,7 +31,8 @@ a {
 
 $font_h1: 3rem;
 $font_h2: 2rem;
-$font_h3: 1.3rem;
+$font_h3: 1.5rem;
+$font_h5: 1.2rem;
 $font_h4: 1rem;
 
 $font_i: 1.5rem;
@@ -43,26 +44,22 @@ $hover_transition: all 0.5s ease;
 header {
     width: 100%;
     height: auto;
-    background-color: antiquewhite;
 
     .contents {
         width: 80%;
         height: auto;
-        background-color: cornflowerblue;
         margin: 0 auto;
 
         #topbar {
             width: 100%;
             height: 3vw;
-            background-color: aqua;
             display: flex;
             justify-content: space-between;
             align-items: center;
 
             .top_menu {
-                width: 35%;
+                width: 45%;
                 height: 100%;
-                background-color: brown;
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
@@ -70,14 +67,13 @@ header {
                 .top_help a,
                 .top_number a {
                     font-weight: bold;
-                    font-size: $font_h3;
+                    font-size: $font_h5;
                 }
             }
 
             .top_bar_icon {
-                width: 20%;
+                width: 25%;
                 height: 100%;
-                background-color: salmon;
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
@@ -103,7 +99,7 @@ header {
         align-items: center;
 
         .logo {
-            width: 15%;
+            width: 17%;
             height: 100%;
 
             a {
@@ -120,20 +116,23 @@ header {
         .list {
             width: 50%;
             height: 100%;
-            background-color: darkorange;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
 
             li {
                 font-size: 1.2rem;
+
+                a:hover {
+                    color: #f4e6e5;
+                    transition: $hover_transition;
+                }
             }
         }
 
         .search {
-            width: 20%;
+            width: 23%;
             height: 100%;
-            background-color: firebrick;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -142,13 +141,13 @@ header {
                 font-size: $font_i;
 
                 &:hover {
-                    color: skyblue;
+                    color: #f4e6e5;
                     transition: all 0.5s ease;
                 }
             }
 
             input {
-                width: 45%;
+                width: 50%;
                 height: 25px;
                 font-size: $font_h4;
                 border-radius: 20px;
@@ -156,7 +155,7 @@ header {
                 &:hover {
                     transform: scaleX(1.1);
                     transition: all 0.5s ease;
-                    background-color: aliceblue;
+                    background-color: #f4e6e5;
                 }
             }
         }
@@ -165,5 +164,108 @@ header {
 
 
 // 풋터 시작
+footer {
+    width: 100%;
+    height: auto;
+    background-color: bisque;
 
+    .contents{
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        background-color: aqua;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .footer0 {
+            width: 270px;
+            height: 330px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            flex-direction: column;
+
+            img {
+                width: 200px;
+                height: 50px;
+            }
+
+            .ptag {
+                width: 100%;
+                box-sizing: border-box;
+                padding: 10px;
+
+                p {
+                    font-size: $font_h4;
+                }
+            }
+
+            .icon {
+                width: 100%;
+                height: 50px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                text-align: center;
+
+                li {
+                    width: 15%;
+
+                    i {
+                        font-size: $font_h3;
+                    }
+
+                    .fa-square-facebook::before {
+                        content: "\f082";
+                    }
+
+                    .fa-square-instagram::before {
+                        content: "\e055";
+                    }
+
+                    .fa-square-twitter::before {
+                        content: "\f081";
+                    }
+
+                    .fa-square-github::before {
+                        content: "\f092";
+                    }
+                }
+            }
+        }
+
+        .footer1 {
+            width: 170px;
+            height: 300px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+
+            h5 {
+                width: 100%;
+                font-size: $font_h3;
+                text-align: left;
+            }
+
+            ul {
+                width: 100%;
+                height: 230px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+
+                li {
+                    margin-bottom: 20px;
+
+                    a {
+                        font-size: $font_h4;
+                    }
+                }
+            }
+        }
+    }
+}
 

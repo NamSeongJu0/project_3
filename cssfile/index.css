@@ -27,26 +27,22 @@ a {
 header {
   width: 100%;
   height: auto;
-  background-color: antiquewhite;
 }
 header .contents {
   width: 80%;
   height: auto;
-  background-color: cornflowerblue;
   margin: 0 auto;
 }
 header .contents #topbar {
   width: 100%;
   height: 3vw;
-  background-color: aqua;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 header .contents #topbar .top_menu {
-  width: 35%;
+  width: 45%;
   height: 100%;
-  background-color: brown;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -54,12 +50,11 @@ header .contents #topbar .top_menu {
 header .contents #topbar .top_menu .top_help a,
 header .contents #topbar .top_menu .top_number a {
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 header .contents #topbar .top_bar_icon {
-  width: 20%;
+  width: 25%;
   height: 100%;
-  background-color: salmon;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -80,7 +75,7 @@ header #nav {
   align-items: center;
 }
 header #nav .logo {
-  width: 15%;
+  width: 17%;
   height: 100%;
 }
 header #nav .logo a {
@@ -94,7 +89,6 @@ header #nav .logo a img {
 header #nav .list {
   width: 50%;
   height: 100%;
-  background-color: darkorange;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -102,10 +96,13 @@ header #nav .list {
 header #nav .list li {
   font-size: 1.2rem;
 }
+header #nav .list li a:hover {
+  color: #f4e6e5;
+  transition: all 0.5s ease;
+}
 header #nav .search {
-  width: 20%;
+  width: 23%;
   height: 100%;
-  background-color: firebrick;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -114,11 +111,11 @@ header #nav .search i {
   font-size: 1.5rem;
 }
 header #nav .search i:hover {
-  color: skyblue;
+  color: #f4e6e5;
   transition: all 0.5s ease;
 }
 header #nav .search input {
-  width: 45%;
+  width: 50%;
   height: 25px;
   font-size: 1rem;
   border-radius: 20px;
@@ -126,7 +123,95 @@ header #nav .search input {
 header #nav .search input:hover {
   transform: scaleX(1.1);
   transition: all 0.5s ease;
-  background-color: aliceblue;
+  background-color: #f4e6e5;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: bisque;
+}
+footer .contents {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .contents .footer0 {
+  width: 270px;
+  height: 330px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+}
+footer .contents .footer0 img {
+  width: 200px;
+  height: 50px;
+}
+footer .contents .footer0 .ptag {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+footer .contents .footer0 .ptag p {
+  font-size: 1rem;
+}
+footer .contents .footer0 .icon {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+footer .contents .footer0 .icon li {
+  width: 15%;
+}
+footer .contents .footer0 .icon li i {
+  font-size: 1.5rem;
+}
+footer .contents .footer0 .icon li .fa-square-facebook::before {
+  content: "\f082";
+}
+footer .contents .footer0 .icon li .fa-square-instagram::before {
+  content: "\e055";
+}
+footer .contents .footer0 .icon li .fa-square-twitter::before {
+  content: "\f081";
+}
+footer .contents .footer0 .icon li .fa-square-github::before {
+  content: "\f092";
+}
+footer .contents .footer1 {
+  width: 170px;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+footer .contents .footer1 h5 {
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: left;
+}
+footer .contents .footer1 ul {
+  width: 100%;
+  height: 230px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+footer .contents .footer1 ul li {
+  margin-bottom: 20px;
+}
+footer .contents .footer1 ul li a {
+  font-size: 1rem;
 }
 
 #main_slide {
@@ -244,7 +329,7 @@ header #nav .search input:hover {
 }
 #Cate .cate .catebox {
   width: 100%;
-  height: 500px;
+  height: 350px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
