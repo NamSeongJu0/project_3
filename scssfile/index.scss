@@ -225,7 +225,7 @@
             span {
                 font-size: 17px;
                 font-weight: bold;
-                margin-right: auto;
+                text-align: center;
             }
 
             p {
@@ -237,7 +237,15 @@
                 bottom: 0;
             }
 
+            img {
+                width: 65%;
+            }
+
             .info {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
                 background-color: #fff;
                 position: relative;
                 z-index: 5;
@@ -248,9 +256,26 @@
                 height: 30px;
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
                 position: absolute;
                 bottom: 0;
                 right: 10px;
+
+                .spen1 {
+                    font-size: 16px;
+                }
+
+                .img_2 {
+                    width: 45px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
             }
         }
     }

@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-
     // BestSelling 부분
     $.ajax({
         method: "GET",    
@@ -20,7 +19,7 @@ $(document).ready(function() {
             $(".bookinfo .info").eq(i).append("<h4>" + msg.documents[i].title + "</h4>").append("<span>" + msg.documents[i].authors + "</span>").append("<p>" + msg.documents[i].price + "원" +  "</p>").append("<p>" + msg.documents[i].status + "</p>");
     
     
-            $(".bookinfo").eq(i).find(".span1").append("<span>" + "ADD TO CART" + "</span>");
+            $(".bookinfo").eq(i).find(".spen1").append("ADD TO CART");
             
             $(".bookinfo").eq(i).find(".img_2").append('<img src = "indeximg/my2.png" />', '<img src = "indeximg/my5.png"/>');
     
@@ -61,3 +60,18 @@ $(document).ready(function() {
 
     });
 });
+
+
+
+// booklist hover 효과
+
+$(document).ready(function(){
+
+    $('.bookinfo').hover(function() {
+        $(this).children('.info').css({"transition": "all 0.5s ease", "transform": "translateY(-20px)"});
+    }, function() {
+        $(this).children('.info').css({"transition": "all 0.5s ease", "transform": "translateY(0px)"});
+    });
+
+});
+
