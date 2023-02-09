@@ -117,7 +117,7 @@ header {
                 font-size: 1.2rem;
 
                 a:hover {
-                    color: #e2d5d4;
+                    color: #dbc3c2;
                     transition: $hover_transition;
                 }
             }
@@ -134,7 +134,7 @@ header {
                 font-size: $font_i;
 
                 &:hover {
-                    color: #e2d5d4;
+                    color: #dbc3c2;
                     transition: all 0.5s ease;
                 }
             }
@@ -148,9 +148,9 @@ header {
                 padding: 3px;
 
                 &:hover {
-                    transform: scaleX(1.1);
+                    transform: scale(1.1);
                     transition: all 0.5s ease;
-                    background-color: #e2d5d4;
+                    background-color: #dbc3c2;
                 }
             }
         }
@@ -162,13 +162,11 @@ header {
 footer {
     width: 100%;
     height: auto;
-    background-color: bisque;
 
     .contents{
         width: 80%;
         height: auto;
         margin: 0 auto;
-        background-color: aqua;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -209,6 +207,11 @@ footer {
 
                     i {
                         font-size: $font_h3;
+                    }
+
+                    i:hover {
+                        color: $hover_color;
+                        transition: $hover_transition;
                     }
 
                     .fa-square-facebook::before {
@@ -257,6 +260,12 @@ footer {
 
                     a {
                         font-size: $font_h4;
+
+                        &:hover {
+                            color: #ff6d6d;
+                            transition: $hover_transition;
+                            transform: translateX(10px);
+                        }
                     }
                 }
             }
