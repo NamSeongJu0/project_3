@@ -1,13 +1,6 @@
 @charset "UTF-8";
 
 
-// 폰트
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-
-.notosanskr * { 
- font-family: 'Noto Sans KR', sans-serif;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -124,7 +117,7 @@ header {
                 font-size: 1.2rem;
 
                 a:hover {
-                    color: #f4e6e5;
+                    color: #e2d5d4;
                     transition: $hover_transition;
                 }
             }
@@ -141,7 +134,7 @@ header {
                 font-size: $font_i;
 
                 &:hover {
-                    color: #f4e6e5;
+                    color: #e2d5d4;
                     transition: all 0.5s ease;
                 }
             }
@@ -151,11 +144,13 @@ header {
                 height: 25px;
                 font-size: $font_h4;
                 border-radius: 20px;
+                box-sizing: border-box;
+                padding: 3px;
 
                 &:hover {
                     transform: scaleX(1.1);
                     transition: all 0.5s ease;
-                    background-color: #f4e6e5;
+                    background-color: #e2d5d4;
                 }
             }
         }
