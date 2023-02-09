@@ -122,6 +122,7 @@
 #Cate {
     width: 100%;
     height: auto;
+    margin: 200px auto;
 
     .cate {
         width: 80%;
@@ -187,8 +188,7 @@
 #Bestseller {
     width: 80%;
     height: auto;
-    background-color: burlywood;
-    margin: 100px auto;
+    margin: 200px auto;
 
 
     h1 {
@@ -200,16 +200,19 @@
         width: 100%;
         height: 370px;
         background-color: cornflowerblue;
-        border: 1px solid black;
+        border-top: 1px solid black;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
 
         .bookinfo {
             width: 18%;
-            height: 95%;
+            height: 100%;
+            border-right: 1px solid black;
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
             box-sizing: border-box;
-            padding: 10px;
+            padding: 26px 0 0 0;
             text-align: center;
             position: relative;
 
@@ -220,8 +223,9 @@
             }
 
             span {
-                font-size: 14px;
+                font-size: 17px;
                 font-weight: bold;
+                margin-right: auto;
             }
 
             p {
@@ -233,14 +237,20 @@
                 bottom: 0;
             }
 
+            .info {
+                background-color: #fff;
+                position: relative;
+                z-index: 5;
+            }
+
             .img {
-                width: 70px;
+                width: 93%;
                 height: 30px;
                 display: flex;
                 justify-content: space-between;
                 position: absolute;
                 bottom: 0;
-                right: 0;
+                right: 10px;
             }
         }
     }
@@ -248,10 +258,14 @@
 
 
 #Featured {
-    width: 80%;
+    width: 100%;
     height: auto;
-    background-color: burlywood;
-    margin: 100px auto;
+
+    .Featured_1 {
+        width: 80%;
+        height: auto;
+        margin: 200px auto;
+    }
 
 
     h1 {
@@ -263,11 +277,16 @@
     .view {
         width: 45%;
         height: 60px;
-        background-color: aquamarine;
         margin: 0 auto;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        margin-bottom: 30px;
+
+        a:hover {
+            color: #dbc3c2;
+            transition: $hover_transition;
+        }
     }
 
     .viewlist {

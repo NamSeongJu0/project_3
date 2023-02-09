@@ -15,24 +15,22 @@ $(document).ready(function() {
     
         for(var i = 0; i < lis.length; i++) {
     
-            $(".bookinfo").eq(i).append("<img src = '" + msg.documents[i].thumbnail + "'/>");
+            $(".bookinfo .img_1").eq(i).append("<img src = '" + msg.documents[i].thumbnail + "'/>");
     
-            $(".bookinfo").eq(i).append("<h4>" + msg.documents[i].title + "</h4>").append("<span>" + msg.documents[i].authors + "</span>");
-    
-            // $(".bookinfo").eq(i).append("<span>" + msg.documents[i].authors + "</span>");
-    
-            var str = msg.documents[i].contents;
-            var str2 = str.substring(2, 40);
+            $(".bookinfo .info").eq(i).append("<h4>" + msg.documents[i].title + "</h4>").append("<span>" + msg.documents[i].authors + "</span>").append("<p>" + msg.documents[i].price + "원" +  "</p>").append("<p>" + msg.documents[i].status + "</p>");
     
     
-            $(".bookinfo").eq(i).append("<p>" + str2 + "</p>");
-            $(".bookinfo").eq(i).find(".img").append('<img src = "indeximg/my2.png" />', '<img src = "indeximg/my5.png"/>');
+            $(".bookinfo").eq(i).find(".span1").append("<span>" + "ADD TO CART" + "</span>");
+            
+            $(".bookinfo").eq(i).find(".img_2").append('<img src = "indeximg/my2.png" />', '<img src = "indeximg/my5.png"/>');
     
         }
 
     });
 
 
+
+    // view 부분..
 
     $.ajax({
         method: "GET",    
@@ -51,10 +49,9 @@ $(document).ready(function() {
     
             $(".viewinfo").eq(i).append("<h4>" + msg.documents[i].title + "</h4>").append("<span>" + msg.documents[i].authors + "</span>");
     
-            // $(".viewinfo").eq(i).append("<span>" + msg.documents[i].authors + "</span>");
     
             var str = msg.documents[i].contents;
-            var str2 = str.substring(2, 40);
+            var str2 = str.substring(2, 55);
     
     
             $(".viewinfo").eq(i).append("<p>" + str2 + "</p>");
