@@ -17,9 +17,9 @@ $(document).ready(function() {
             var str = msg.documents[i].title;
             var str2 = str.substring(0, 20);
     
-            $(".bookinfo .img_1").eq(i).append("<img src = '" + msg.documents[i].thumbnail + "'/>");
+            $(".bookinfo .img_1").eq(i).append('<a href="#">' + "<img src = '" + msg.documents[i].thumbnail + "'/>" + "</a>");
     
-            $(".bookinfo .info").eq(i).append("<h4>" + str2 + "</h4>").append("<span>" + msg.documents[i].authors + "</span>").append("<p>" + "정가 : " + msg.documents[i].price + "원" +  "</p>").append("<p>" + msg.documents[i].datetime + "</p>");
+            $(".bookinfo .info").eq(i).append("<h4>" + str2 + "</h4>").append("<span>" + msg.documents[i].authors + "</span>").append("<p>" + "정가 : " + msg.documents[i].price + "원" +  "</p>").append("<p>" + msg.documents[i].refresh_token_expires_in + "</p>");
     
     
             $(".bookinfo").eq(i).find(".spen1").append("ADD TO CART");
@@ -49,7 +49,7 @@ $(document).ready(function() {
             var str = msg.documents[i].title;
             var str2 = str.substring(0, 20);
     
-            $(".viewinfo .img_1").eq(i).append('<a href="#">' + "<img src = '" + msg.documents[i].thumbnail + "'/>" + '</a>');
+            $(".viewinfo .img_1").eq(i).append('<a href="#">' + "<img src = '" + msg.documents[i].thumbnail + "'/>" + "</a>");
     
             $(".viewinfo .info").eq(i).append("<h4>" + str2 + "</h4>").append("<span>" + msg.documents[i].authors + "</span>").append("<p>" + "정가 : "+ msg.documents[i].price + "원" +  "</p>").append("<p>" + msg.documents[i].datetime + "</p>");
     
@@ -82,12 +82,18 @@ $(document).ready(function(){
 
     
     // 이미지 오버 효과
-    $(".spen1 img").mousemove(function(event) {
-        var x = event.pageX;
-        var y = event.pageY;
-        $(".click").css({left: x +18 , top: y -30}).addClass("on");
-    }).mouseleave(function() {
-        $(".click").removeClass("on");
+    $(".viewinfo .spen1").hover(function() {
+        $(this).children('.click').stop().animate({
+            height: '100%',
+            opacity: "1",
+            top: "0"
+        }, 300);
+    }, function() {
+        $(this).children('.click').stop().animate({
+            height: '0%',
+            opacity: "0",
+            top: "-50"
+        }, 300);
     });
 
 });

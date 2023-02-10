@@ -45,11 +45,11 @@
                         font-size: 1.2rem;
                         margin-bottom: 3%;
                     }
-    
+
                     h1 {
                         font-size: $font_h1;
                     }
-    
+
                     .button {
                         width: 200px;
                         height: 50px;
@@ -73,7 +73,7 @@
                         height: 80%;
                     }
                 }
-            }        
+            }
         }
     }
 
@@ -103,7 +103,7 @@
                 transform: translate(-50%, -50%);
                 z-index: 999;
                 border: 1px solid #333;
-                animation: sb_btn 0.5s ease;         
+                animation: sb_btn 0.5s ease;
             }
         }
 
@@ -202,10 +202,10 @@
 
     .booklist {
         width: 100%;
-        height: 423px;
+        height: 365px;
         border-right: 1px solid #afafaf;
         border-left: 1px solid #afafaf;
-        border-top: 1px solid #afafaf;    
+        border-top: 1px solid #afafaf;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
@@ -239,13 +239,13 @@
                 font-size: 12px;
                 text-align: left;
                 box-sizing: border-box;
-                padding: 10px;
+                padding: 5px;
                 z-index: 5;
                 bottom: 0;
             }
 
             img {
-                width: 55%;
+                width: 100%;
             }
 
             .info {
@@ -266,7 +266,7 @@
                 justify-content: space-between;
                 align-items: center;
                 position: absolute;
-                bottom: 0;
+                bottom: 3px;
                 right: 10px;
 
                 .spen1 {
@@ -274,7 +274,7 @@
                 }
 
                 .img_2 {
-                    width: 50px;
+                    width: 60px;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -282,10 +282,14 @@
                     img {
                         width: 25px;
                         height: 25px;
-                    }
+                        border-radius: 50%;
 
-                    &1:hover {
-                        background-color: $hover_color;
+                        &:first-child:hover,
+                        &:nth-of-type(2):hover {
+                            transition: $hover_transition;
+                            background-color: $hover_color;
+                            cursor: pointer;
+                        }
                     }
                 }
             }
@@ -297,23 +301,6 @@
 #Featured {
     width: 100%;
     height: auto;
-
-    .click {
-        width: 120px;
-        height: 30px;
-        border-radius: 20px;
-        background: #333;
-        color: #fff;
-        text-align: center;
-        line-height: 30px;
-        position: absolute;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-    }
-    
-    .click.on {            
-        opacity: 0.8;            
-    }
 
     .Featured_1 {
         width: 80%;
@@ -345,19 +332,19 @@
 
     .viewlist {
         width: 100%;
-        height: 800px;   
+        height: 730px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
         flex-wrap: wrap;
 
         .viewinfo {
             width: 21%;
             height: 50%;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: flex-end;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
             border: 1px solid #afafaf;
             box-sizing: border-box;
             // padding: 10px;
@@ -379,7 +366,7 @@
                 font-size: 12px;
                 text-align: left;
                 box-sizing: border-box;
-                padding: 10px;
+                padding: 5px;
                 z-index: 5;
                 bottom: 0;
             }
@@ -406,16 +393,39 @@
                 justify-content: space-between;
                 align-items: center;
                 position: absolute;
-                bottom: 0;
+                bottom: 3px;
                 right: 10px;
 
                 .spen1 {
-                    width: 25px;
-                    height: 25px;
+                    width: 24px;
+                    height: 24px;
+                    position: relative;
+
+                    .click {
+                        width: 100px;
+                        height: 0px;
+                        border-radius: 20px;
+                        background: #333;
+                        color: #fff;
+                        text-align: center;
+                        line-height: 25px;
+                        position: absolute;
+                        left: 35px;
+                        z-index: 1;
+                        text-align: center;
+                    }
+                
+                    .click.on {
+                        opacity: 0.8;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
 
                 .img_2 {
-                    width: 50px;
+                    width: 60px;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
@@ -423,11 +433,16 @@
                     img {
                         width: 25px;
                         height: 25px;
+                        border-radius: 50%;
+
+                        &:first-child:hover,
+                        &:nth-of-type(2):hover {
+                            transition: $hover_transition;
+                            background-color: $hover_color;
+                            cursor: pointer;
+                        }
                     }
 
-                    &:hover {
-                        background-color: $hover_color;
-                    }
                 }
             }
         }

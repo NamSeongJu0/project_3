@@ -383,7 +383,7 @@ footer .contents .footer1 ul li a:hover {
 }
 #Bestseller .booklist {
   width: 100%;
-  height: 423px;
+  height: 365px;
   border-right: 1px solid #afafaf;
   border-left: 1px solid #afafaf;
   border-top: 1px solid #afafaf;
@@ -418,12 +418,12 @@ footer .contents .footer1 ul li a:hover {
   font-size: 12px;
   text-align: left;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 5px;
   z-index: 5;
   bottom: 0;
 }
 #Bestseller .booklist .bookinfo img {
-  width: 55%;
+  width: 100%;
 }
 #Bestseller .booklist .bookinfo .info {
   width: 100%;
@@ -442,14 +442,14 @@ footer .contents .footer1 ul li a:hover {
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  bottom: 0;
+  bottom: 3px;
   right: 10px;
 }
 #Bestseller .booklist .bookinfo .img .spen1 {
   font-size: 18px;
 }
 #Bestseller .booklist .bookinfo .img .img_2 {
-  width: 50px;
+  width: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -457,29 +457,17 @@ footer .contents .footer1 ul li a:hover {
 #Bestseller .booklist .bookinfo .img .img_2 img {
   width: 25px;
   height: 25px;
+  border-radius: 50%;
 }
-#Bestseller .booklist .bookinfo .img .img_21:hover {
+#Bestseller .booklist .bookinfo .img .img_2 img:first-child:hover, #Bestseller .booklist .bookinfo .img .img_2 img:nth-of-type(2):hover {
+  transition: all 0.5s ease;
   background-color: lightpink;
+  cursor: pointer;
 }
 
 #Featured {
   width: 100%;
   height: auto;
-}
-#Featured .click {
-  width: 120px;
-  height: 30px;
-  border-radius: 20px;
-  background: #333;
-  color: #fff;
-  text-align: center;
-  line-height: 30px;
-  position: absolute;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-#Featured .click.on {
-  opacity: 0.8;
 }
 #Featured .Featured_1 {
   width: 80%;
@@ -506,19 +494,19 @@ footer .contents .footer1 ul li a:hover {
 }
 #Featured .viewlist {
   width: 100%;
-  height: 800px;
+  height: 730px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   flex-wrap: wrap;
 }
 #Featured .viewlist .viewinfo {
   width: 21%;
   height: 50%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
   border: 1px solid #afafaf;
   box-sizing: border-box;
   text-align: center;
@@ -537,7 +525,7 @@ footer .contents .footer1 ul li a:hover {
   font-size: 12px;
   text-align: left;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 5px;
   z-index: 5;
   bottom: 0;
 }
@@ -561,15 +549,35 @@ footer .contents .footer1 ul li a:hover {
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  bottom: 0;
+  bottom: 3px;
   right: 10px;
 }
 #Featured .viewlist .viewinfo .img .spen1 {
-  width: 25px;
-  height: 25px;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+#Featured .viewlist .viewinfo .img .spen1 .click {
+  width: 100px;
+  height: 0px;
+  border-radius: 20px;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 25px;
+  position: absolute;
+  left: 35px;
+  z-index: 1;
+  text-align: center;
+}
+#Featured .viewlist .viewinfo .img .spen1 .click.on {
+  opacity: 0.8;
+}
+#Featured .viewlist .viewinfo .img .spen1:hover {
+  cursor: pointer;
 }
 #Featured .viewlist .viewinfo .img .img_2 {
-  width: 50px;
+  width: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -577,7 +585,10 @@ footer .contents .footer1 ul li a:hover {
 #Featured .viewlist .viewinfo .img .img_2 img {
   width: 25px;
   height: 25px;
+  border-radius: 50%;
 }
-#Featured .viewlist .viewinfo .img .img_2:hover {
+#Featured .viewlist .viewinfo .img .img_2 img:first-child:hover, #Featured .viewlist .viewinfo .img .img_2 img:nth-of-type(2):hover {
+  transition: all 0.5s ease;
   background-color: lightpink;
+  cursor: pointer;
 }
