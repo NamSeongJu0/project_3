@@ -324,13 +324,14 @@
         align-items: center;
         margin-bottom: 30px;
 
-        a:hover {
-            color: #dbc3c2;
-            transition: $hover_transition;
+        li:hover {
+        //     color: #dbc3c2;
+        //     transition: $hover_transition;
+            cursor: pointer;
         }
     }
 
-    .viewlist {
+    .futurelist, .salelist, .moodlist {
         width: 100%;
         height: 730px;
         display: flex;
@@ -338,7 +339,7 @@
         align-items: flex-end;
         flex-wrap: wrap;
 
-        .viewinfo {
+        .futureinfo, .saleinfo, .moodinfo {
             width: 21%;
             height: 50%;
             display: flex;
@@ -347,7 +348,6 @@
             align-items: center;
             border: 1px solid #afafaf;
             box-sizing: border-box;
-            // padding: 10px;
             text-align: center;
             position: relative;
 

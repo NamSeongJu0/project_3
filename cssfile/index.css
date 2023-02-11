@@ -488,11 +488,10 @@ footer .contents .footer1 ul li a:hover {
   align-items: center;
   margin-bottom: 30px;
 }
-#Featured .view a:hover {
-  color: #dbc3c2;
-  transition: all 0.5s ease;
+#Featured .view li:hover {
+  cursor: pointer;
 }
-#Featured .viewlist {
+#Featured .futurelist, #Featured .salelist, #Featured .moodlist {
   width: 100%;
   height: 730px;
   display: flex;
@@ -500,7 +499,7 @@ footer .contents .footer1 ul li a:hover {
   align-items: flex-end;
   flex-wrap: wrap;
 }
-#Featured .viewlist .viewinfo {
+#Featured .futurelist .futureinfo, #Featured .futurelist .saleinfo, #Featured .futurelist .moodinfo, #Featured .salelist .futureinfo, #Featured .salelist .saleinfo, #Featured .salelist .moodinfo, #Featured .moodlist .futureinfo, #Featured .moodlist .saleinfo, #Featured .moodlist .moodinfo {
   width: 21%;
   height: 50%;
   display: flex;
@@ -512,16 +511,16 @@ footer .contents .footer1 ul li a:hover {
   text-align: center;
   position: relative;
 }
-#Featured .viewlist .viewinfo h4 {
+#Featured .futurelist .futureinfo h4, #Featured .futurelist .saleinfo h4, #Featured .futurelist .moodinfo h4, #Featured .salelist .futureinfo h4, #Featured .salelist .saleinfo h4, #Featured .salelist .moodinfo h4, #Featured .moodlist .futureinfo h4, #Featured .moodlist .saleinfo h4, #Featured .moodlist .moodinfo h4 {
   font-size: 15px;
   box-sizing: border-box;
   margin-bottom: 10px;
 }
-#Featured .viewlist .viewinfo span {
+#Featured .futurelist .futureinfo span, #Featured .futurelist .saleinfo span, #Featured .futurelist .moodinfo span, #Featured .salelist .futureinfo span, #Featured .salelist .saleinfo span, #Featured .salelist .moodinfo span, #Featured .moodlist .futureinfo span, #Featured .moodlist .saleinfo span, #Featured .moodlist .moodinfo span {
   font-size: 14px;
   font-weight: bold;
 }
-#Featured .viewlist .viewinfo p {
+#Featured .futurelist .futureinfo p, #Featured .futurelist .saleinfo p, #Featured .futurelist .moodinfo p, #Featured .salelist .futureinfo p, #Featured .salelist .saleinfo p, #Featured .salelist .moodinfo p, #Featured .moodlist .futureinfo p, #Featured .moodlist .saleinfo p, #Featured .moodlist .moodinfo p {
   font-size: 12px;
   text-align: left;
   box-sizing: border-box;
@@ -529,10 +528,10 @@ footer .contents .footer1 ul li a:hover {
   z-index: 5;
   bottom: 0;
 }
-#Featured .viewlist .viewinfo img {
+#Featured .futurelist .futureinfo img, #Featured .futurelist .saleinfo img, #Featured .futurelist .moodinfo img, #Featured .salelist .futureinfo img, #Featured .salelist .saleinfo img, #Featured .salelist .moodinfo img, #Featured .moodlist .futureinfo img, #Featured .moodlist .saleinfo img, #Featured .moodlist .moodinfo img {
   width: 100%;
 }
-#Featured .viewlist .viewinfo .info {
+#Featured .futurelist .futureinfo .info, #Featured .futurelist .saleinfo .info, #Featured .futurelist .moodinfo .info, #Featured .salelist .futureinfo .info, #Featured .salelist .saleinfo .info, #Featured .salelist .moodinfo .info, #Featured .moodlist .futureinfo .info, #Featured .moodlist .saleinfo .info, #Featured .moodlist .moodinfo .info {
   width: 100%;
   display: flex;
   align-items: center;
@@ -542,7 +541,7 @@ footer .contents .footer1 ul li a:hover {
   position: relative;
   z-index: 5;
 }
-#Featured .viewlist .viewinfo .img {
+#Featured .futurelist .futureinfo .img, #Featured .futurelist .saleinfo .img, #Featured .futurelist .moodinfo .img, #Featured .salelist .futureinfo .img, #Featured .salelist .saleinfo .img, #Featured .salelist .moodinfo .img, #Featured .moodlist .futureinfo .img, #Featured .moodlist .saleinfo .img, #Featured .moodlist .moodinfo .img {
   width: 94%;
   height: 30px;
   display: flex;
@@ -552,12 +551,12 @@ footer .contents .footer1 ul li a:hover {
   bottom: 3px;
   right: 10px;
 }
-#Featured .viewlist .viewinfo .img .spen1 {
+#Featured .futurelist .futureinfo .img .spen1, #Featured .futurelist .saleinfo .img .spen1, #Featured .futurelist .moodinfo .img .spen1, #Featured .salelist .futureinfo .img .spen1, #Featured .salelist .saleinfo .img .spen1, #Featured .salelist .moodinfo .img .spen1, #Featured .moodlist .futureinfo .img .spen1, #Featured .moodlist .saleinfo .img .spen1, #Featured .moodlist .moodinfo .img .spen1 {
   width: 24px;
   height: 24px;
   position: relative;
 }
-#Featured .viewlist .viewinfo .img .spen1 .click {
+#Featured .futurelist .futureinfo .img .spen1 .click, #Featured .futurelist .saleinfo .img .spen1 .click, #Featured .futurelist .moodinfo .img .spen1 .click, #Featured .salelist .futureinfo .img .spen1 .click, #Featured .salelist .saleinfo .img .spen1 .click, #Featured .salelist .moodinfo .img .spen1 .click, #Featured .moodlist .futureinfo .img .spen1 .click, #Featured .moodlist .saleinfo .img .spen1 .click, #Featured .moodlist .moodinfo .img .spen1 .click {
   width: 100px;
   height: 0px;
   border-radius: 20px;
@@ -570,24 +569,24 @@ footer .contents .footer1 ul li a:hover {
   z-index: 1;
   text-align: center;
 }
-#Featured .viewlist .viewinfo .img .spen1 .click.on {
+#Featured .futurelist .futureinfo .img .spen1 .click.on, #Featured .futurelist .saleinfo .img .spen1 .click.on, #Featured .futurelist .moodinfo .img .spen1 .click.on, #Featured .salelist .futureinfo .img .spen1 .click.on, #Featured .salelist .saleinfo .img .spen1 .click.on, #Featured .salelist .moodinfo .img .spen1 .click.on, #Featured .moodlist .futureinfo .img .spen1 .click.on, #Featured .moodlist .saleinfo .img .spen1 .click.on, #Featured .moodlist .moodinfo .img .spen1 .click.on {
   opacity: 0.8;
 }
-#Featured .viewlist .viewinfo .img .spen1:hover {
+#Featured .futurelist .futureinfo .img .spen1:hover, #Featured .futurelist .saleinfo .img .spen1:hover, #Featured .futurelist .moodinfo .img .spen1:hover, #Featured .salelist .futureinfo .img .spen1:hover, #Featured .salelist .saleinfo .img .spen1:hover, #Featured .salelist .moodinfo .img .spen1:hover, #Featured .moodlist .futureinfo .img .spen1:hover, #Featured .moodlist .saleinfo .img .spen1:hover, #Featured .moodlist .moodinfo .img .spen1:hover {
   cursor: pointer;
 }
-#Featured .viewlist .viewinfo .img .img_2 {
+#Featured .futurelist .futureinfo .img .img_2, #Featured .futurelist .saleinfo .img .img_2, #Featured .futurelist .moodinfo .img .img_2, #Featured .salelist .futureinfo .img .img_2, #Featured .salelist .saleinfo .img .img_2, #Featured .salelist .moodinfo .img .img_2, #Featured .moodlist .futureinfo .img .img_2, #Featured .moodlist .saleinfo .img .img_2, #Featured .moodlist .moodinfo .img .img_2 {
   width: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#Featured .viewlist .viewinfo .img .img_2 img {
+#Featured .futurelist .futureinfo .img .img_2 img, #Featured .futurelist .saleinfo .img .img_2 img, #Featured .futurelist .moodinfo .img .img_2 img, #Featured .salelist .futureinfo .img .img_2 img, #Featured .salelist .saleinfo .img .img_2 img, #Featured .salelist .moodinfo .img .img_2 img, #Featured .moodlist .futureinfo .img .img_2 img, #Featured .moodlist .saleinfo .img .img_2 img, #Featured .moodlist .moodinfo .img .img_2 img {
   width: 25px;
   height: 25px;
   border-radius: 50%;
 }
-#Featured .viewlist .viewinfo .img .img_2 img:first-child:hover, #Featured .viewlist .viewinfo .img .img_2 img:nth-of-type(2):hover {
+#Featured .futurelist .futureinfo .img .img_2 img:first-child:hover, #Featured .futurelist .futureinfo .img .img_2 img:nth-of-type(2):hover, #Featured .futurelist .saleinfo .img .img_2 img:first-child:hover, #Featured .futurelist .saleinfo .img .img_2 img:nth-of-type(2):hover, #Featured .futurelist .moodinfo .img .img_2 img:first-child:hover, #Featured .futurelist .moodinfo .img .img_2 img:nth-of-type(2):hover, #Featured .salelist .futureinfo .img .img_2 img:first-child:hover, #Featured .salelist .futureinfo .img .img_2 img:nth-of-type(2):hover, #Featured .salelist .saleinfo .img .img_2 img:first-child:hover, #Featured .salelist .saleinfo .img .img_2 img:nth-of-type(2):hover, #Featured .salelist .moodinfo .img .img_2 img:first-child:hover, #Featured .salelist .moodinfo .img .img_2 img:nth-of-type(2):hover, #Featured .moodlist .futureinfo .img .img_2 img:first-child:hover, #Featured .moodlist .futureinfo .img .img_2 img:nth-of-type(2):hover, #Featured .moodlist .saleinfo .img .img_2 img:first-child:hover, #Featured .moodlist .saleinfo .img .img_2 img:nth-of-type(2):hover, #Featured .moodlist .moodinfo .img .img_2 img:first-child:hover, #Featured .moodlist .moodinfo .img .img_2 img:nth-of-type(2):hover {
   transition: all 0.5s ease;
   background-color: lightpink;
   cursor: pointer;
