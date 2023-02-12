@@ -269,9 +269,8 @@ footer .contents .footer1 ul li a:hover {
   text-align: center;
   color: white;
   box-sizing: border-box;
-  padding: 5px;
   border-radius: 15px;
-  line-height: 2.3;
+  line-height: 50px;
   margin-top: 3%;
 }
 #main_slide .slide .slide_box .slide_b1 .slide_img {
@@ -590,4 +589,116 @@ footer .contents .footer1 ul li a:hover {
   transition: all 0.5s ease;
   background-color: lightpink;
   cursor: pointer;
+}
+
+#Deals {
+  width: 100%;
+  height: 634px;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10% auto;
+  position: relative;
+}
+#Deals .head {
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4%;
+}
+#Deals .head h1 {
+  font-size: 3rem;
+}
+#Deals .head span {
+  font-size: 1rem;
+}
+#Deals .head span:hover {
+  color: #dbc3c2;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+#Deals .deals {
+  width: 80%;
+  height: 334px;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+#Deals .deals .prev, #Deals .deals .next {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 2rem;
+}
+#Deals .deals .prev:hover, #Deals .deals .next:hover {
+  color: #fff;
+  background-color: #000000;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+#Deals .deals .dealbox {
+  width: 1150px;
+  height: 100%;
+  border-top: 1px solid #afafaf;
+  border-left: 1px solid #afafaf;
+  overflow: hidden;
+}
+#Deals .deals .dealbox .deallist {
+  width: 3450px;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Deals .deals .dealbox .deallist .list_box {
+  width: 575px;
+  height: 333px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  margin-left: 0px;
+}
+#Deals .slide_btn {
+  width: 120px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#Deals .slide_btn .sb_c {
+  background-color: #333;
+  position: relative;
+}
+#Deals .slide_btn .sb_c::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  border: 1px solid #333;
+  animation: sb_btn 0.5s ease;
+}
+#Deals .slide_btn .sb {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #ddd;
 }

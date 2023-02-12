@@ -121,6 +121,31 @@ $(document).ready(function() {
         }
 
     });
+
+
+    // Deals 부분
+    $.ajax({
+        method: "GET",    
+        url: "https://dapi.kakao.com/v3/search/book?target=title",    
+        data: {query: "행복"},    
+        headers: {Authorization: "KakaoAK 6f9bb4da749b9b559e49e18decbe669a"}
+    })
+    
+    .done(function(msg) {
+        var lis = document.getElementsByClassName("list_box");
+    
+        for(var i = 0; i < lis.length; i++) {
+
+            var str = msg.documents[i].title;
+            var str2 = str.substring(0, 20);
+    
+            $(".list_box .list_img").eq(i).append('<a href="#">' + "<img src = '" + msg.documents[i].thumbnail + "'/>" + "</a>");
+    
+            $(".list_box .list_info").eq(i).append("<h4>" + str2 + "</h4>").append("<span>" + msg.documents[i].authors + "</span>").append("<p>" + "판매가 : "+ msg.documents[i].sale_price + "원" +  "</p>").append("<p>" + msg.documents[i].publisher + "</p>");
+    
+        }
+
+    });
 });
 
 
