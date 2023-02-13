@@ -260,7 +260,7 @@ footer .contents .footer1 ul li a:hover {
   margin-bottom: 3%;
 }
 #main_slide .slide .slide_box .slide_b1 .slide_b1_1 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 #main_slide .slide .slide_box .slide_b1 .slide_b1_1 .button {
   width: 200px;
@@ -328,7 +328,7 @@ footer .contents .footer1 ul li a:hover {
   margin: 0 auto;
 }
 #Cate .cate h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 #Cate .cate .catebox {
@@ -377,7 +377,7 @@ footer .contents .footer1 ul li a:hover {
   margin: 200px auto;
 }
 #Bestseller h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 30px;
 }
 #Bestseller .booklist {
@@ -404,12 +404,13 @@ footer .contents .footer1 ul li a:hover {
   position: relative;
 }
 #Bestseller .booklist .bookinfo h4 {
-  font-size: 15px;
+  font-size: 16px;
   box-sizing: border-box;
   margin-bottom: 10px;
 }
 #Bestseller .booklist .bookinfo span {
-  font-size: 17px;
+  color: #afafaf;
+  font-size: 14px;
   font-weight: bold;
   text-align: center;
 }
@@ -420,6 +421,9 @@ footer .contents .footer1 ul li a:hover {
   padding: 5px;
   z-index: 5;
   bottom: 0;
+}
+#Bestseller .booklist .bookinfo p:last-child {
+  color: #ff0000;
 }
 #Bestseller .booklist .bookinfo img {
   width: 100%;
@@ -474,7 +478,7 @@ footer .contents .footer1 ul li a:hover {
   margin: 200px auto;
 }
 #Featured h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -490,7 +494,9 @@ footer .contents .footer1 ul li a:hover {
 #Featured .view li:hover {
   cursor: pointer;
 }
-#Featured .futurelist, #Featured .salelist, #Featured .moodlist {
+#Featured .futurelist,
+#Featured .salelist,
+#Featured .moodlist {
   width: 100%;
   height: 730px;
   display: flex;
@@ -498,7 +504,15 @@ footer .contents .footer1 ul li a:hover {
   align-items: flex-end;
   flex-wrap: wrap;
 }
-#Featured .futurelist .futureinfo, #Featured .futurelist .saleinfo, #Featured .futurelist .moodinfo, #Featured .salelist .futureinfo, #Featured .salelist .saleinfo, #Featured .salelist .moodinfo, #Featured .moodlist .futureinfo, #Featured .moodlist .saleinfo, #Featured .moodlist .moodinfo {
+#Featured .futurelist .futureinfo,
+#Featured .futurelist .saleinfo,
+#Featured .futurelist .moodinfo,
+#Featured .salelist .futureinfo,
+#Featured .salelist .saleinfo,
+#Featured .salelist .moodinfo,
+#Featured .moodlist .futureinfo,
+#Featured .moodlist .saleinfo,
+#Featured .moodlist .moodinfo {
   width: 21%;
   height: 50%;
   display: flex;
@@ -510,16 +524,41 @@ footer .contents .footer1 ul li a:hover {
   text-align: center;
   position: relative;
 }
-#Featured .futurelist .futureinfo h4, #Featured .futurelist .saleinfo h4, #Featured .futurelist .moodinfo h4, #Featured .salelist .futureinfo h4, #Featured .salelist .saleinfo h4, #Featured .salelist .moodinfo h4, #Featured .moodlist .futureinfo h4, #Featured .moodlist .saleinfo h4, #Featured .moodlist .moodinfo h4 {
-  font-size: 15px;
+#Featured .futurelist .futureinfo h4,
+#Featured .futurelist .saleinfo h4,
+#Featured .futurelist .moodinfo h4,
+#Featured .salelist .futureinfo h4,
+#Featured .salelist .saleinfo h4,
+#Featured .salelist .moodinfo h4,
+#Featured .moodlist .futureinfo h4,
+#Featured .moodlist .saleinfo h4,
+#Featured .moodlist .moodinfo h4 {
+  font-size: 16px;
   box-sizing: border-box;
   margin-bottom: 10px;
 }
-#Featured .futurelist .futureinfo span, #Featured .futurelist .saleinfo span, #Featured .futurelist .moodinfo span, #Featured .salelist .futureinfo span, #Featured .salelist .saleinfo span, #Featured .salelist .moodinfo span, #Featured .moodlist .futureinfo span, #Featured .moodlist .saleinfo span, #Featured .moodlist .moodinfo span {
+#Featured .futurelist .futureinfo span,
+#Featured .futurelist .saleinfo span,
+#Featured .futurelist .moodinfo span,
+#Featured .salelist .futureinfo span,
+#Featured .salelist .saleinfo span,
+#Featured .salelist .moodinfo span,
+#Featured .moodlist .futureinfo span,
+#Featured .moodlist .saleinfo span,
+#Featured .moodlist .moodinfo span {
+  color: #afafaf;
   font-size: 14px;
   font-weight: bold;
 }
-#Featured .futurelist .futureinfo p, #Featured .futurelist .saleinfo p, #Featured .futurelist .moodinfo p, #Featured .salelist .futureinfo p, #Featured .salelist .saleinfo p, #Featured .salelist .moodinfo p, #Featured .moodlist .futureinfo p, #Featured .moodlist .saleinfo p, #Featured .moodlist .moodinfo p {
+#Featured .futurelist .futureinfo p,
+#Featured .futurelist .saleinfo p,
+#Featured .futurelist .moodinfo p,
+#Featured .salelist .futureinfo p,
+#Featured .salelist .saleinfo p,
+#Featured .salelist .moodinfo p,
+#Featured .moodlist .futureinfo p,
+#Featured .moodlist .saleinfo p,
+#Featured .moodlist .moodinfo p {
   font-size: 12px;
   text-align: left;
   box-sizing: border-box;
@@ -527,10 +566,37 @@ footer .contents .footer1 ul li a:hover {
   z-index: 5;
   bottom: 0;
 }
-#Featured .futurelist .futureinfo img, #Featured .futurelist .saleinfo img, #Featured .futurelist .moodinfo img, #Featured .salelist .futureinfo img, #Featured .salelist .saleinfo img, #Featured .salelist .moodinfo img, #Featured .moodlist .futureinfo img, #Featured .moodlist .saleinfo img, #Featured .moodlist .moodinfo img {
+#Featured .futurelist .futureinfo p:last-child,
+#Featured .futurelist .saleinfo p:last-child,
+#Featured .futurelist .moodinfo p:last-child,
+#Featured .salelist .futureinfo p:last-child,
+#Featured .salelist .saleinfo p:last-child,
+#Featured .salelist .moodinfo p:last-child,
+#Featured .moodlist .futureinfo p:last-child,
+#Featured .moodlist .saleinfo p:last-child,
+#Featured .moodlist .moodinfo p:last-child {
+  color: #ff0000;
+}
+#Featured .futurelist .futureinfo img,
+#Featured .futurelist .saleinfo img,
+#Featured .futurelist .moodinfo img,
+#Featured .salelist .futureinfo img,
+#Featured .salelist .saleinfo img,
+#Featured .salelist .moodinfo img,
+#Featured .moodlist .futureinfo img,
+#Featured .moodlist .saleinfo img,
+#Featured .moodlist .moodinfo img {
   width: 100%;
 }
-#Featured .futurelist .futureinfo .info, #Featured .futurelist .saleinfo .info, #Featured .futurelist .moodinfo .info, #Featured .salelist .futureinfo .info, #Featured .salelist .saleinfo .info, #Featured .salelist .moodinfo .info, #Featured .moodlist .futureinfo .info, #Featured .moodlist .saleinfo .info, #Featured .moodlist .moodinfo .info {
+#Featured .futurelist .futureinfo .info,
+#Featured .futurelist .saleinfo .info,
+#Featured .futurelist .moodinfo .info,
+#Featured .salelist .futureinfo .info,
+#Featured .salelist .saleinfo .info,
+#Featured .salelist .moodinfo .info,
+#Featured .moodlist .futureinfo .info,
+#Featured .moodlist .saleinfo .info,
+#Featured .moodlist .moodinfo .info {
   width: 100%;
   display: flex;
   align-items: center;
@@ -540,7 +606,15 @@ footer .contents .footer1 ul li a:hover {
   position: relative;
   z-index: 5;
 }
-#Featured .futurelist .futureinfo .img, #Featured .futurelist .saleinfo .img, #Featured .futurelist .moodinfo .img, #Featured .salelist .futureinfo .img, #Featured .salelist .saleinfo .img, #Featured .salelist .moodinfo .img, #Featured .moodlist .futureinfo .img, #Featured .moodlist .saleinfo .img, #Featured .moodlist .moodinfo .img {
+#Featured .futurelist .futureinfo .img,
+#Featured .futurelist .saleinfo .img,
+#Featured .futurelist .moodinfo .img,
+#Featured .salelist .futureinfo .img,
+#Featured .salelist .saleinfo .img,
+#Featured .salelist .moodinfo .img,
+#Featured .moodlist .futureinfo .img,
+#Featured .moodlist .saleinfo .img,
+#Featured .moodlist .moodinfo .img {
   width: 94%;
   height: 30px;
   display: flex;
@@ -550,12 +624,28 @@ footer .contents .footer1 ul li a:hover {
   bottom: 3px;
   right: 10px;
 }
-#Featured .futurelist .futureinfo .img .spen1, #Featured .futurelist .saleinfo .img .spen1, #Featured .futurelist .moodinfo .img .spen1, #Featured .salelist .futureinfo .img .spen1, #Featured .salelist .saleinfo .img .spen1, #Featured .salelist .moodinfo .img .spen1, #Featured .moodlist .futureinfo .img .spen1, #Featured .moodlist .saleinfo .img .spen1, #Featured .moodlist .moodinfo .img .spen1 {
+#Featured .futurelist .futureinfo .img .spen1,
+#Featured .futurelist .saleinfo .img .spen1,
+#Featured .futurelist .moodinfo .img .spen1,
+#Featured .salelist .futureinfo .img .spen1,
+#Featured .salelist .saleinfo .img .spen1,
+#Featured .salelist .moodinfo .img .spen1,
+#Featured .moodlist .futureinfo .img .spen1,
+#Featured .moodlist .saleinfo .img .spen1,
+#Featured .moodlist .moodinfo .img .spen1 {
   width: 24px;
   height: 24px;
   position: relative;
 }
-#Featured .futurelist .futureinfo .img .spen1 .click, #Featured .futurelist .saleinfo .img .spen1 .click, #Featured .futurelist .moodinfo .img .spen1 .click, #Featured .salelist .futureinfo .img .spen1 .click, #Featured .salelist .saleinfo .img .spen1 .click, #Featured .salelist .moodinfo .img .spen1 .click, #Featured .moodlist .futureinfo .img .spen1 .click, #Featured .moodlist .saleinfo .img .spen1 .click, #Featured .moodlist .moodinfo .img .spen1 .click {
+#Featured .futurelist .futureinfo .img .spen1 .click,
+#Featured .futurelist .saleinfo .img .spen1 .click,
+#Featured .futurelist .moodinfo .img .spen1 .click,
+#Featured .salelist .futureinfo .img .spen1 .click,
+#Featured .salelist .saleinfo .img .spen1 .click,
+#Featured .salelist .moodinfo .img .spen1 .click,
+#Featured .moodlist .futureinfo .img .spen1 .click,
+#Featured .moodlist .saleinfo .img .spen1 .click,
+#Featured .moodlist .moodinfo .img .spen1 .click {
   width: 100px;
   height: 0px;
   border-radius: 20px;
@@ -568,24 +658,72 @@ footer .contents .footer1 ul li a:hover {
   z-index: 1;
   text-align: center;
 }
-#Featured .futurelist .futureinfo .img .spen1 .click.on, #Featured .futurelist .saleinfo .img .spen1 .click.on, #Featured .futurelist .moodinfo .img .spen1 .click.on, #Featured .salelist .futureinfo .img .spen1 .click.on, #Featured .salelist .saleinfo .img .spen1 .click.on, #Featured .salelist .moodinfo .img .spen1 .click.on, #Featured .moodlist .futureinfo .img .spen1 .click.on, #Featured .moodlist .saleinfo .img .spen1 .click.on, #Featured .moodlist .moodinfo .img .spen1 .click.on {
+#Featured .futurelist .futureinfo .img .spen1 .click.on,
+#Featured .futurelist .saleinfo .img .spen1 .click.on,
+#Featured .futurelist .moodinfo .img .spen1 .click.on,
+#Featured .salelist .futureinfo .img .spen1 .click.on,
+#Featured .salelist .saleinfo .img .spen1 .click.on,
+#Featured .salelist .moodinfo .img .spen1 .click.on,
+#Featured .moodlist .futureinfo .img .spen1 .click.on,
+#Featured .moodlist .saleinfo .img .spen1 .click.on,
+#Featured .moodlist .moodinfo .img .spen1 .click.on {
   opacity: 0.8;
 }
-#Featured .futurelist .futureinfo .img .spen1:hover, #Featured .futurelist .saleinfo .img .spen1:hover, #Featured .futurelist .moodinfo .img .spen1:hover, #Featured .salelist .futureinfo .img .spen1:hover, #Featured .salelist .saleinfo .img .spen1:hover, #Featured .salelist .moodinfo .img .spen1:hover, #Featured .moodlist .futureinfo .img .spen1:hover, #Featured .moodlist .saleinfo .img .spen1:hover, #Featured .moodlist .moodinfo .img .spen1:hover {
+#Featured .futurelist .futureinfo .img .spen1:hover,
+#Featured .futurelist .saleinfo .img .spen1:hover,
+#Featured .futurelist .moodinfo .img .spen1:hover,
+#Featured .salelist .futureinfo .img .spen1:hover,
+#Featured .salelist .saleinfo .img .spen1:hover,
+#Featured .salelist .moodinfo .img .spen1:hover,
+#Featured .moodlist .futureinfo .img .spen1:hover,
+#Featured .moodlist .saleinfo .img .spen1:hover,
+#Featured .moodlist .moodinfo .img .spen1:hover {
   cursor: pointer;
 }
-#Featured .futurelist .futureinfo .img .img_2, #Featured .futurelist .saleinfo .img .img_2, #Featured .futurelist .moodinfo .img .img_2, #Featured .salelist .futureinfo .img .img_2, #Featured .salelist .saleinfo .img .img_2, #Featured .salelist .moodinfo .img .img_2, #Featured .moodlist .futureinfo .img .img_2, #Featured .moodlist .saleinfo .img .img_2, #Featured .moodlist .moodinfo .img .img_2 {
+#Featured .futurelist .futureinfo .img .img_2,
+#Featured .futurelist .saleinfo .img .img_2,
+#Featured .futurelist .moodinfo .img .img_2,
+#Featured .salelist .futureinfo .img .img_2,
+#Featured .salelist .saleinfo .img .img_2,
+#Featured .salelist .moodinfo .img .img_2,
+#Featured .moodlist .futureinfo .img .img_2,
+#Featured .moodlist .saleinfo .img .img_2,
+#Featured .moodlist .moodinfo .img .img_2 {
   width: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#Featured .futurelist .futureinfo .img .img_2 img, #Featured .futurelist .saleinfo .img .img_2 img, #Featured .futurelist .moodinfo .img .img_2 img, #Featured .salelist .futureinfo .img .img_2 img, #Featured .salelist .saleinfo .img .img_2 img, #Featured .salelist .moodinfo .img .img_2 img, #Featured .moodlist .futureinfo .img .img_2 img, #Featured .moodlist .saleinfo .img .img_2 img, #Featured .moodlist .moodinfo .img .img_2 img {
+#Featured .futurelist .futureinfo .img .img_2 img,
+#Featured .futurelist .saleinfo .img .img_2 img,
+#Featured .futurelist .moodinfo .img .img_2 img,
+#Featured .salelist .futureinfo .img .img_2 img,
+#Featured .salelist .saleinfo .img .img_2 img,
+#Featured .salelist .moodinfo .img .img_2 img,
+#Featured .moodlist .futureinfo .img .img_2 img,
+#Featured .moodlist .saleinfo .img .img_2 img,
+#Featured .moodlist .moodinfo .img .img_2 img {
   width: 25px;
   height: 25px;
   border-radius: 50%;
 }
-#Featured .futurelist .futureinfo .img .img_2 img:first-child:hover, #Featured .futurelist .futureinfo .img .img_2 img:nth-of-type(2):hover, #Featured .futurelist .saleinfo .img .img_2 img:first-child:hover, #Featured .futurelist .saleinfo .img .img_2 img:nth-of-type(2):hover, #Featured .futurelist .moodinfo .img .img_2 img:first-child:hover, #Featured .futurelist .moodinfo .img .img_2 img:nth-of-type(2):hover, #Featured .salelist .futureinfo .img .img_2 img:first-child:hover, #Featured .salelist .futureinfo .img .img_2 img:nth-of-type(2):hover, #Featured .salelist .saleinfo .img .img_2 img:first-child:hover, #Featured .salelist .saleinfo .img .img_2 img:nth-of-type(2):hover, #Featured .salelist .moodinfo .img .img_2 img:first-child:hover, #Featured .salelist .moodinfo .img .img_2 img:nth-of-type(2):hover, #Featured .moodlist .futureinfo .img .img_2 img:first-child:hover, #Featured .moodlist .futureinfo .img .img_2 img:nth-of-type(2):hover, #Featured .moodlist .saleinfo .img .img_2 img:first-child:hover, #Featured .moodlist .saleinfo .img .img_2 img:nth-of-type(2):hover, #Featured .moodlist .moodinfo .img .img_2 img:first-child:hover, #Featured .moodlist .moodinfo .img .img_2 img:nth-of-type(2):hover {
+#Featured .futurelist .futureinfo .img .img_2 img:first-child:hover, #Featured .futurelist .futureinfo .img .img_2 img:nth-of-type(2):hover,
+#Featured .futurelist .saleinfo .img .img_2 img:first-child:hover,
+#Featured .futurelist .saleinfo .img .img_2 img:nth-of-type(2):hover,
+#Featured .futurelist .moodinfo .img .img_2 img:first-child:hover,
+#Featured .futurelist .moodinfo .img .img_2 img:nth-of-type(2):hover,
+#Featured .salelist .futureinfo .img .img_2 img:first-child:hover,
+#Featured .salelist .futureinfo .img .img_2 img:nth-of-type(2):hover,
+#Featured .salelist .saleinfo .img .img_2 img:first-child:hover,
+#Featured .salelist .saleinfo .img .img_2 img:nth-of-type(2):hover,
+#Featured .salelist .moodinfo .img .img_2 img:first-child:hover,
+#Featured .salelist .moodinfo .img .img_2 img:nth-of-type(2):hover,
+#Featured .moodlist .futureinfo .img .img_2 img:first-child:hover,
+#Featured .moodlist .futureinfo .img .img_2 img:nth-of-type(2):hover,
+#Featured .moodlist .saleinfo .img .img_2 img:first-child:hover,
+#Featured .moodlist .saleinfo .img .img_2 img:nth-of-type(2):hover,
+#Featured .moodlist .moodinfo .img .img_2 img:first-child:hover,
+#Featured .moodlist .moodinfo .img .img_2 img:nth-of-type(2):hover {
   transition: all 0.5s ease;
   background-color: lightpink;
   cursor: pointer;
@@ -594,13 +732,12 @@ footer .contents .footer1 ul li a:hover {
 #Deals {
   width: 100%;
   height: 634px;
-  background-color: bisque;
+  background-color: #fff2e1;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 10% auto;
-  position: relative;
 }
 #Deals .head {
   width: 80%;
@@ -611,7 +748,7 @@ footer .contents .footer1 ul li a:hover {
   margin-bottom: 4%;
 }
 #Deals .head h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 #Deals .head span {
   font-size: 1rem;
@@ -624,13 +761,13 @@ footer .contents .footer1 ul li a:hover {
 #Deals .deals {
   width: 80%;
   height: 334px;
-  background-color: cornflowerblue;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
 }
-#Deals .deals .prev, #Deals .deals .next {
+#Deals .deals .prev,
+#Deals .deals .next {
   width: 40px;
   height: 40px;
   background-color: #fff;
@@ -638,7 +775,8 @@ footer .contents .footer1 ul li a:hover {
   line-height: 40px;
   font-size: 2rem;
 }
-#Deals .deals .prev:hover, #Deals .deals .next:hover {
+#Deals .deals .prev:hover,
+#Deals .deals .next:hover {
   color: #fff;
   background-color: #000000;
   transition: all 0.5s ease;
@@ -662,25 +800,80 @@ footer .contents .footer1 ul li a:hover {
 #Deals .deals .dealbox .deallist .list_box {
   width: 575px;
   height: 333px;
-  border: 1px solid black;
+  border-bottom: 1px solid #afafaf;
+  border-right: 1px solid #afafaf;
   display: flex;
   align-items: center;
   margin-left: 0px;
 }
+#Deals .deals .dealbox .deallist .list_box:hover {
+  box-shadow: 2px 30px 10px rgba(221, 221, 221, 0.5);
+}
 #Deals .deals .dealbox .deallist .list_box .list_img {
   width: 220px;
   height: 267px;
-  margin-top: 5%;
   margin-left: 3%;
 }
-#Deals .deals .dealbox .deallist .list_box .list_img img {
+#Deals .deals .dealbox .deallist .list_box .list_img a {
+  width: 90%;
+  height: 100%;
+}
+#Deals .deals .dealbox .deallist .list_box .list_img a img {
   width: 100%;
   height: 100%;
+}
+#Deals .deals .dealbox .deallist .list_box .list_info {
+  width: 295px;
+  height: 267px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+#Deals .deals .dealbox .deallist .list_box .list_info h4 {
+  font-size: 1.3rem;
+}
+#Deals .deals .dealbox .deallist .list_box .list_info span {
+  color: #afafaf;
+  font-weight: 500;
+}
+#Deals .deals .dealbox .deallist .list_box .list_info p {
+  font-size: 16px;
+}
+#Deals .deals .dealbox .deallist .list_box .list_info p:nth-of-type(1) {
+  color: #ff0000;
+}
+#Deals .deals .dealbox .deallist .list_box .list_info #list_count {
+  width: 80%;
+  height: 50%;
+  margin-top: 5%;
+}
+#Deals .deals .dealbox .deallist .list_box .list_info #list_count span {
+  font-size: 16px;
+  color: #ff0000;
+}
+#Deals .deals .dealbox .deallist .list_box .list_info #list_count span:first-child {
+  margin-right: 10px;
+}
+#Deals .deals .dealbox .deallist .list_box .list_info #list_count .count {
+  width: 80%;
+  height: 1rem;
+  background-color: #fff3e4;
+  border-radius: 20px;
+  position: relative;
+  margin-top: 3%;
+}
+#Deals .deals .dealbox .deallist .list_box .list_info #list_count .count::after {
+  content: "";
+  width: 65%;
+  height: 1rem;
+  background-color: #9f7e58;
+  position: absolute;
+  border-radius: 20px;
 }
 #Deals .slide_btn {
   width: 200px;
   height: 50px;
-  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -709,4 +902,101 @@ footer .contents .footer1 ul li a:hover {
   border-radius: 50%;
   cursor: pointer;
   background-color: #ddd;
+}
+
+#Releases {
+  width: 100%;
+  height: auto;
+  background-color: cornflowerblue;
+  margin: 10% auto;
+}
+#Releases .releases {
+  width: 80%;
+  height: auto;
+  background-color: chocolate;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+#Releases .releases .Rbox {
+  width: 100%;
+  height: 50px;
+  background-color: #f4e6e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#Releases .releases .Rbox h1 {
+  font-size: 2.5rem;
+}
+#Releases .releases .Rbox .R_ul {
+  width: 40%;
+  height: 100%;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#Releases .releases .Rbox .R_ul li {
+  font-size: 1rem;
+}
+#Releases .releases .Rbox .R_ul li:hover {
+  color: #dbc3c2;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+#Releases .releases .releasebox {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#Releases .releases .releasebox .R_box {
+  width: 30%;
+  height: 100%;
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#Releases .releases .releasebox .R_box .R_img {
+  width: 350px;
+  height: 280px;
+  background-color: #ff0000;
+  margin-bottom: 7%;
+}
+#Releases .releases .releasebox .R_box .R_text {
+  width: 350px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+#Releases .releases .releasebox .R_box .R_text h2 {
+  font-size: 2.5rem;
+}
+#Releases .releases .releasebox .R_box .R_text h1 {
+  font-size: 3.5rem;
+  color: #ff0000;
+}
+#Releases .releases .releasebox .R_box .R_text p {
+  font-size: 2rem;
+  color: #afafaf;
+}
+#Releases .releases .releasebox .R_box .R_text .R_button {
+  width: 200px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  color: #fff;
+  background-color: #9f7e58;
+  margin-top: 5%;
+}
+#Releases .releases .releasebox .R_box .R_text .R_button:hover {
+  cursor: pointer;
 }

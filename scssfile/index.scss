@@ -47,7 +47,7 @@
                     }
 
                     h1 {
-                        font-size: $font_h1;
+                        font-size: 2.5rem;
                     }
 
                     .button {
@@ -129,7 +129,7 @@
         margin: 0 auto;
 
         h1 {
-            font-size: $font_h1;
+            font-size: 2.5rem;
             text-align: center;
         }
 
@@ -195,7 +195,7 @@
 
 
     h1 {
-        font-size: $font_h1;
+        font-size: 2.5rem;
         margin-bottom: 30px;
     }
 
@@ -223,13 +223,14 @@
             position: relative;
 
             h4 {
-                font-size: 15px;
+                font-size: 16px;
                 box-sizing: border-box;
                 margin-bottom: 10px;
             }
 
             span {
-                font-size: 17px;
+                color: #afafaf;
+                font-size: 14px;
                 font-weight: bold;
                 text-align: center;
             }
@@ -241,6 +242,10 @@
                 padding: 5px;
                 z-index: 5;
                 bottom: 0;
+
+                &:last-child {
+                    color: #ff0000;
+                }
             }
 
             img {
@@ -309,7 +314,7 @@
 
 
     h1 {
-        font-size: $font_h1;
+        font-size: 2.5rem;
         margin-bottom: 30px;
         text-align: center;
     }
@@ -324,13 +329,15 @@
         margin-bottom: 30px;
 
         li:hover {
-        //     color: #dbc3c2;
-        //     transition: $hover_transition;
+            //     color: #dbc3c2;
+            //     transition: $hover_transition;
             cursor: pointer;
         }
     }
 
-    .futurelist, .salelist, .moodlist {
+    .futurelist,
+    .salelist,
+    .moodlist {
         width: 100%;
         height: 730px;
         display: flex;
@@ -338,7 +345,9 @@
         align-items: flex-end;
         flex-wrap: wrap;
 
-        .futureinfo, .saleinfo, .moodinfo {
+        .futureinfo,
+        .saleinfo,
+        .moodinfo {
             width: 21%;
             height: 50%;
             display: flex;
@@ -351,12 +360,13 @@
             position: relative;
 
             h4 {
-                font-size: 15px;
+                font-size: 16px;
                 box-sizing: border-box;
                 margin-bottom: 10px;
             }
 
             span {
+                color: #afafaf;
                 font-size: 14px;
                 font-weight: bold;
             }
@@ -368,6 +378,10 @@
                 padding: 5px;
                 z-index: 5;
                 bottom: 0;
+
+                &:last-child {
+                    color: #ff0000;
+                }
             }
 
             img {
@@ -413,7 +427,7 @@
                         z-index: 1;
                         text-align: center;
                     }
-                
+
                     .click.on {
                         opacity: 0.8;
                     }
@@ -453,15 +467,14 @@
 #Deals {
     width: 100%;
     height: 634px;
-    background-color: bisque;
+    background-color: #fff2e1;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: 10% auto;
-    position: relative;
 
-     .head {
+    .head {
         width: 80%;
         height: auto;
         display: flex;
@@ -470,7 +483,7 @@
         margin-bottom: 4%;
 
         h1 {
-            font-size: $font_h1;
+            font-size: 2.5rem;
         }
 
         span {
@@ -481,19 +494,19 @@
                 transition: $hover_transition;
                 cursor: pointer;
             }
-        }  
+        }
     }
 
     .deals {
         width: 80%;
         height: 334px;
-        background-color: cornflowerblue;
         display: flex;
         justify-content: space-around;
         align-items: center;
         margin: 0 auto;
 
-        .prev, .next {
+        .prev,
+        .next {
             width: 40px;
             height: 40px;
             background-color: #fff;
@@ -527,20 +540,90 @@
                 .list_box {
                     width: 575px;
                     height: 333px;
-                    border: 1px solid black;
+                    border-bottom: 1px solid #afafaf;
+                    border-right: 1px solid #afafaf;
                     display: flex;
                     align-items: center;
                     margin-left: 0px;
 
+                    &:hover {
+                        box-shadow: 2px 30px 10px rgb(221 221 221 / 50%);
+                    }
+
                     .list_img {
                         width: 220px;
                         height: 267px;
-                        margin-top: 5%;
                         margin-left: 3%;
 
-                        img {
-                            width: 100%;
+                        a {
+                            width: 90%;
                             height: 100%;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+
+                    .list_info {
+                        width: 295px;
+                        height: 267px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        flex-direction: column;
+
+                        h4 {
+                            font-size: 1.3rem;
+                        }
+
+                        span {
+                            color: #afafaf;
+                            font-weight: 500;
+                        }
+
+                        p {
+                            font-size: 16px;
+
+                            &:nth-of-type(1) {
+                                color: #ff0000;
+                            }
+                        }
+
+                        
+
+                        #list_count {
+                            width: 80%;
+                            height: 50%;
+                            margin-top: 5%;
+
+                            span {
+                                font-size: 16px;
+                                color: #ff0000;
+
+                                &:first-child {
+                                    margin-right: 10px;
+                                }
+                            }
+
+                            .count {
+                                width: 80%;
+                                height: 1rem;
+                                background-color: #fff3e4;
+                                border-radius: 20px;
+                                position: relative;
+                                margin-top: 3%;
+
+                                &::after {
+                                    content: "";
+                                    width: 65%;
+                                    height: 1rem;
+                                    background-color: #9f7e58;
+                                    position: absolute;
+                                    border-radius: 20px;
+                                }
+                            }
                         }
                     }
                 }
@@ -551,7 +634,6 @@
     .slide_btn {
         width: 200px;
         height: 50px;
-        position: absolute;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -587,3 +669,116 @@
 }
 
 
+
+// Release 부분
+#Releases {
+    width: 100%;
+    height: auto;
+    background-color: cornflowerblue;
+    margin: 10% auto;
+
+    .releases {
+        width: 80%;
+        height: auto;
+        background-color: chocolate;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+
+        .Rbox {
+            width: 100%;
+            height: 50px;
+            background-color: #f4e6e5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .R_ul {
+                width: 40%;
+                height: 100%;
+                background-color: aqua;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                li {
+                    font-size: 1rem;
+
+                    &:hover {
+                        color: #dbc3c2;
+                        transition: all 0.5s ease;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .releasebox {
+            width: 100%;
+            height: 750px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .R_box {
+                width: 30%;
+                height: 100%;
+                background-color: blanchedalmond;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .R_img {
+                    width: 350px;
+                    height: 280px;
+                    background-color: #ff0000;
+                    margin-bottom: 7%;
+                }
+
+                .R_text {
+                    width: 350px;
+                    height: 280px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    flex-direction: column;
+
+                    h2 {
+                        font-size: 2.5rem;
+                    }
+
+                    h1 {
+                        font-size: 3.5rem;
+                        color: #ff0000;
+                    }
+
+                    p {
+                        font-size: $font_h2;
+                        color: #afafaf;
+                    }
+
+                    .R_button {
+                        width: 200px;
+                        height: 70px;
+                        text-align: center;
+                        line-height: 70px;
+                        color: #fff;
+                        background-color: #9f7e58;
+                        margin-top: 5%;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
