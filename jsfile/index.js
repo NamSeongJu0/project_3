@@ -165,7 +165,7 @@ $(document).ready(function () {
             
             $(".R_img").eq(i).append('<a href="#">' + "<img src = '" + msg.documents[10].thumbnail + "'/>" + "</a>");
             var lis = $(".releasesbox"+i +' .releasesinfo' );
-console.log(lis);
+
             for (var j = 0; j < lis.length; j++) {
 
                 var str = msg.documents[j].title;
@@ -282,10 +282,48 @@ $(document).ready(function () {
     $(".releasesbox1, .releasesbox2, .releasesbox3").css("display", "none");
     $(".R_ul li:nth-of-type(1)").css("color", "#dbc3c2");
 
-    $('.R_ul li').click(function () {
-        var idx = $(this).index();
+    $('.R_ul li:nth-of-type(1)').click(function () {
+
         $(this).css("color", "#dbc3c2").siblings().css("color", "#000000");
-        $('.releases .releasesbox').eq(idx).stop().fadeIn(900).css('display', 'flex').siblings().css('display', 'none').fadeOut();
+
+        $('.releasesbox0').stop().fadeIn(900).css('display', 'flex');
+        $('.releasesbox1').stop().fadeOut(900).css('display', 'none');
+        $('.releasesbox2').stop().fadeOut(900).css('display', 'none');
+        $('.releasesbox3').stop().fadeOut(900).css('display', 'none');
+
+    });
+
+    $('.R_ul li:nth-of-type(2)').click(function () {
+
+        $(this).css("color", "#dbc3c2").siblings().css("color", "#000000");
+
+        $('.releasesbox0').stop().fadeOut(900).css('display', 'none');
+        $('.releasesbox1').stop().fadeIn(900).css('display', 'flex');
+        $('.releasesbox2').stop().fadeOut(900).css('display', 'none');
+        $('.releasesbox3').stop().fadeOut(900).css('display', 'none');
+
+    });
+
+    $('.R_ul li:nth-of-type(3)').click(function () {
+
+        $(this).css("color", "#dbc3c2").siblings().css("color", "#000000");
+
+        $('.releasesbox0').stop().fadeOut(900).css('display', 'none');
+        $('.releasesbox1').stop().fadeOut(900).css('display', 'none');
+        $('.releasesbox2').stop().fadeIn(900).css('display', 'flex');
+        $('.releasesbox3').stop().fadeOut(900).css('display', 'none');
+
+    });
+
+    $('.R_ul li:nth-of-type(4)').click(function () {
+
+        $(this).css("color", "#dbc3c2").siblings().css("color", "#000000");
+
+        $('.releasesbox0').stop().fadeOut(900).css('display', 'none');
+        $('.releasesbox1').stop().fadeOut(900).css('display', 'none');
+        $('.releasesbox2').stop().fadeOut(900).css('display', 'none');
+        $('.releasesbox3').stop().fadeIn(900).css('display', 'flex');
+
     });
 });
 
