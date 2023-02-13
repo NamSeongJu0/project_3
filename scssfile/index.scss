@@ -309,7 +309,7 @@
     .Featured_1 {
         width: 80%;
         height: auto;
-        margin: 200px auto;
+        margin: 30px auto;
     }
 
 
@@ -329,8 +329,8 @@
         margin-bottom: 30px;
 
         li:hover {
-            //     color: #dbc3c2;
-            //     transition: $hover_transition;
+            color: #dbc3c2 !important;
+            transition: $hover_transition !important;
             cursor: pointer;
         }
     }
@@ -674,13 +674,11 @@
 #Releases {
     width: 100%;
     height: auto;
-    background-color: cornflowerblue;
     margin: 10% auto;
 
     .releases {
         width: 80%;
         height: auto;
-        background-color: chocolate;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -690,10 +688,10 @@
         .Rbox {
             width: 100%;
             height: 50px;
-            background-color: #f4e6e5;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 3%;
 
             h1 {
                 font-size: 2.5rem;
@@ -702,7 +700,6 @@
             .R_ul {
                 width: 40%;
                 height: 100%;
-                background-color: aqua;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -711,15 +708,18 @@
                     font-size: 1rem;
 
                     &:hover {
-                        color: #dbc3c2;
-                        transition: all 0.5s ease;
+                        color: #dbc3c2 !important;
+                        transition: $hover_transition !important;
                         cursor: pointer;
                     }
                 }
             }
         }
 
-        .releasebox {
+        .releasesbox0,
+        .releasesbox1,
+        .releasesbox2,
+        .releasesbox3 {
             width: 100%;
             height: 750px;
             display: flex;
@@ -730,21 +730,34 @@
                 width: 30%;
                 height: 100%;
                 background-color: blanchedalmond;
+                border-top: 1px solid #afafaf;
+                border-left: 1px solid #afafaf;
+                border-bottom: 1px solid #afafaf;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
 
                 .R_img {
-                    width: 350px;
+                    width: 200px;
                     height: 280px;
                     background-color: #ff0000;
                     margin-bottom: 7%;
+
+                    a {
+                        width: 100%;
+                        height: 100%;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
                 }
 
                 .R_text {
                     width: 350px;
-                    height: 280px;
+                    height: 330px;
                     display: flex;
                     justify-content: center;
                     align-items: flex-start;
@@ -775,6 +788,115 @@
 
                         &:hover {
                             cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+
+            .releaseslist {
+                width: 70%;
+                height: 100%;
+                border-right: 1px solid #afafaf;
+                border-left: 1px solid #afafaf;
+                border-top: 1px solid #afafaf;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                flex-flow: row wrap;
+        
+                .releasesinfo {
+                    width: 20%;
+                    height: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    border-right: 1px solid #afafaf;
+                    border-left: 1px solid #afafaf;
+                    border-bottom: 1px solid #afafaf;
+                    box-sizing: border-box;
+                    text-align: center;
+                    position: relative;
+        
+                    h4 {
+                        font-size: 15px;
+                        box-sizing: border-box;
+                        margin-bottom: 10px;
+                    }
+        
+                    span {
+                        color: #afafaf;
+                        font-size: 14px;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+        
+                    p {
+                        font-size: 12px;
+                        text-align: left;
+                        box-sizing: border-box;
+                        padding: 5px;
+                        z-index: 5;
+                        bottom: 0;
+        
+                        &:last-child {
+                            color: #ff0000;
+                        }
+                    }
+
+                    .img_1 {
+                        img {
+                            margin-bottom: 8%;
+                        }
+                    }
+        
+                    img {
+                        width: 100%;  
+                    }
+        
+                    .info {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        background-color: #fff;
+                        border: none;
+                        position: relative;
+                        z-index: 5;
+                    }
+        
+                    .img {
+                        width: 93%;
+                        height: 15px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        position: absolute;
+                        bottom: 3px;
+                        right: 10px;
+        
+                        .spen1 {
+                            font-size: 16px;
+                        }
+        
+                        .img_2 {
+                            width: 60px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+        
+                            img {
+                                width: 20px;
+                                height: 20px;
+                                border-radius: 50%;
+        
+                                &:first-child:hover,
+                                &:nth-of-type(2):hover {
+                                    transition: $hover_transition;
+                                    background-color: $hover_color;
+                                    cursor: pointer;
+                                }
+                            }
                         }
                     }
                 }
