@@ -4,7 +4,7 @@
 
 
 // main_slide
-#main_slide {
+.main_slide {
     width: 100%;
     height: 500px;
     display: flex;
@@ -13,16 +13,15 @@
     background-image: url(../indeximg/bg.png);
     margin-bottom: 100px;
 
-    .slide {
+    .slide_wrapper {
         width: 1200px;
         height: 400px;
         display: flex;
-        background-color: aquamarine;
         overflow: hidden;
         position: relative;
 
         .slide_box {
-            width: 5600%;
+            width: 5600px;
             height: 100%;
             display: flex;
 
@@ -51,14 +50,14 @@
                     }
 
                     .button {
-                        width: 200px;
-                        height: 50px;
+                        width: 180px;
+                        height: 40px;
                         background-color: #9f7e58;
                         text-align: center;
                         color: white;
                         box-sizing: border-box;
                         border-radius: 15px;
-                        line-height: 50px;
+                        line-height: 40px;
                         margin-top: 3%;
                     }
                 }
@@ -67,6 +66,27 @@
                     width: 60%;
                     height: 100%;
 
+                    &:nth-of-type(2) {
+                        position: relative;
+
+                        img:nth-of-type(2) {
+                            position: absolute;
+                            top: 60px;
+                            right: 140px;
+                            animation: sky 1s infinite alternate;
+                        }
+
+                        @keyframes sky {
+                            from {
+                                top: 60px;
+                            }
+
+                            to {
+                                top: 40px;
+                            }
+                        }
+                    }
+
                     img {
                         width: 80%;
                         height: 80%;
@@ -74,44 +94,44 @@
                 }
             }
         }
-    }
 
-    .slide_btn {
-        width: 120px;
-        height: 50px;
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        transform: translateX(-50%);
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        .slide_btn {
+            width: 120px;
+            height: 50px;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
 
-        .sb_c {
-            background-color: #333;
-            position: relative;
+            .sb_c {
+                background-color: #333;
+                position: relative;
 
-            &::after {
-                content: "";
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                z-index: 999;
-                border: 1px solid #333;
-                animation: sb_btn 0.5s ease;
+                &::after {
+                    content: "";
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 999;
+                    border: 1px solid #333;
+                    animation: sb_btn 0.5s ease;
+                }
             }
-        }
 
-        .sb {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            cursor: pointer;
-            background-color: #ddd;
+            .sb {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                cursor: pointer;
+                background-color: #ddd;
+            }
         }
     }
 }
@@ -512,7 +532,7 @@
             background-color: #fff;
             text-align: center;
             line-height: 40px;
-            font-size: $font_h2;
+            font-size: $font_h4;
 
             &:hover {
                 color: #fff;
@@ -732,7 +752,7 @@
                 .R_box {
                     width: 30%;
                     height: 100%;
-                    background-color: blanchedalmond;
+                    background-color: #fff2e1;
                     border-top: 1px solid #afafaf;
                     border-left: 1px solid #afafaf;
                     border-bottom: 1px solid #afafaf;
@@ -903,6 +923,176 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+
+// Music
+#Music {
+    width: 1300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15% auto;
+
+    h1 {
+        width: 100%;
+        font-size: 2.5rem;
+        text-align: left;
+        margin-bottom: 3%;
+    }
+
+    .music {
+        width: 100%;
+        height: 250px;
+        border-top: 1px solid #afafaf;
+        border-left: 1px solid #afafaf;
+        overflow: hidden;
+
+        .M_list {
+            width: 3031px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .m_list {
+                width: 433px;
+                height: 99%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                border-top: 1px solid rgba($color: #afafaf, $alpha: 0);
+                border-left: 1px solid rgba($color: #afafaf, $alpha: 0);
+                border-right: 1px solid #afafaf;
+                border-bottom: 1px solid #afafaf;
+            }
+        }
+    }
+
+    .slide_btn {
+        width: 200px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2%;
+
+        .sb_c {
+            background-color: #333;
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 999;
+                border: 1px solid #333;
+                animation: sb_btn 0.5s ease;
+            }
+        }
+
+        .sb {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            background-color: #ddd;
+        }
+    }
+
+}
+
+
+
+// Favorite Authors
+#Favorite {
+    width: 1300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10% auto;
+
+    .favorite {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        span {
+            font-size: 1rem;
+
+            &:hover {
+                color: #dbc3c2;
+                transition: $hover_transition;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .prev,
+    .next {
+        width: 40px;
+        height: 40px;
+        background-color: #eeeeee;
+        line-height: 40px;
+        text-align: center;
+
+        &:hover {
+            color: #fff;
+            background-color: #000000;
+            transition: $hover_transition;
+            cursor: pointer;
+        }
+    }
+
+
+    .favor_box {
+        width: 935px;
+        height: 200px;
+        overflow: hidden;
+
+        .favor_ul {
+            width: 1500px;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .favor_li {
+                width: 150px;
+                height: 180px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+
+                img {
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                }
+
+                p {
+                    font-size: 16px;
+                    text-align: center;
                 }
             }
         }
