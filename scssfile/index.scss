@@ -4,7 +4,7 @@
 
 
 // main_slide
-.main_slide {
+#main_slide {
     width: 100%;
     height: 500px;
     display: flex;
@@ -13,7 +13,7 @@
     background-image: url(../indeximg/bg.png);
     margin-bottom: 100px;
 
-    .slide_wrapper {
+    .slide {
         width: 1200px;
         height: 400px;
         display: flex;
@@ -500,7 +500,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 4%;
+        margin-bottom: 3%;
 
         h1 {
             font-size: 2.5rem;
@@ -525,12 +525,56 @@
         align-items: center;
         margin: 0 auto;
 
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
         .dealbox {
             width: 1150px;
             height: 100%;
             border-top: 1px solid #afafaf;
             border-left: 1px solid #afafaf;
             overflow: hidden;
+
+            .swiper-button-next, .swiper-button-prev {
+                position: absolute;
+                top: var(swiper-navigation-top-offset,50%);
+                width: calc(var(swiper-navigation-size)/ 44 * 27);
+                height: var(swiper-navigation-size);
+                margin-top: calc(0px - (var(swiper-navigation-size)/ 2));
+                z-index: 10;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(swiper-navigation-color,var(swiper-theme-color));
+
+    //             &::after {
+    //                 font-family: swiper-icons;
+    // font            size: var(swiper-navigation-size);
+    // text            transform: none !important;
+    // lett            spacing: 0;
+    // font            variant: initial;
+    // line            height: 1;
+    //             }
+            }
 
             .deallist {
                 width: 3450px;
@@ -560,7 +604,7 @@
                         margin-right: 3%;
 
                         a {
-                            width: 90%;
+                            width: 95%;
                             height: 100%;
 
                             img {
