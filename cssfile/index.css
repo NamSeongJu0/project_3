@@ -784,22 +784,6 @@ footer .contents .footer1 ul li a:hover {
   align-items: center;
   margin: 0 auto;
 }
-#Deals .deals .prev,
-#Deals .deals .next {
-  width: 40px;
-  height: 40px;
-  background-color: #fff;
-  text-align: center;
-  line-height: 40px;
-  font-size: 1rem;
-}
-#Deals .deals .prev:hover,
-#Deals .deals .next:hover {
-  color: #fff;
-  background-color: #000000;
-  transition: all 0.5s ease;
-  cursor: pointer;
-}
 #Deals .deals .dealbox {
   width: 1150px;
   height: 100%;
@@ -821,6 +805,7 @@ footer .contents .footer1 ul li a:hover {
   border-bottom: 1px solid #afafaf;
   border-right: 1px solid #afafaf;
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
   margin-left: 0px;
 }
@@ -830,7 +815,7 @@ footer .contents .footer1 ul li a:hover {
 #Deals .deals .dealbox .deallist .list_box .list_img {
   width: 220px;
   height: 267px;
-  margin-left: 3%;
+  margin-right: 3%;
 }
 #Deals .deals .dealbox .deallist .list_box .list_img a {
   width: 90%;
@@ -841,7 +826,7 @@ footer .contents .footer1 ul li a:hover {
   height: 100%;
 }
 #Deals .deals .dealbox .deallist .list_box .list_info {
-  width: 295px;
+  width: 320px;
   height: 267px;
   display: flex;
   justify-content: center;
@@ -865,6 +850,7 @@ footer .contents .footer1 ul li a:hover {
   width: 80%;
   height: 50%;
   margin-top: 5%;
+  text-align: left;
 }
 #Deals .deals .dealbox .deallist .list_box .list_info #list_count span {
   font-size: 16px;
@@ -888,38 +874,6 @@ footer .contents .footer1 ul li a:hover {
   background-color: #9f7e58;
   position: absolute;
   border-radius: 20px;
-}
-#Deals .slide_btn {
-  width: 200px;
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 2%;
-}
-#Deals .slide_btn .sb_c {
-  background-color: #333;
-  position: relative;
-}
-#Deals .slide_btn .sb_c::after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 999;
-  border: 1px solid #333;
-  animation: sb_btn 0.5s ease;
-}
-#Deals .slide_btn .sb {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-  background-color: #ddd;
 }
 
 #Releases {

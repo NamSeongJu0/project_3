@@ -127,7 +127,7 @@ $(document).ready(function () {
     $.ajax({
         method: "GET",
         url: "https://dapi.kakao.com/v3/search/book?target=title",
-        data: { query: "행복" },
+        data: { query: "불행" },
         headers: { Authorization: "KakaoAK 6f9bb4da749b9b559e49e18decbe669a" }
     })
 
