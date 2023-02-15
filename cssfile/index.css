@@ -756,6 +756,7 @@ footer .contents .footer1 ul li a:hover {
   align-items: center;
   flex-direction: column;
   margin: 10% auto;
+  position: relative;
 }
 #Deals .head {
   width: 80%;
@@ -783,6 +784,7 @@ footer .contents .footer1 ul li a:hover {
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
+  position: initial;
 }
 #Deals .deals .swiper {
   width: 100%;
@@ -861,6 +863,14 @@ footer .contents .footer1 ul li a:hover {
   background-color: #9f7e58;
   position: absolute;
   border-radius: 20px;
+}
+#Deals .swiper-button-next {
+  top: 58%;
+  right: 120px;
+}
+#Deals .swiper-button-prev {
+  top: 58%;
+  left: 120px;
 }
 
 #Releases {
@@ -1221,6 +1231,7 @@ footer .contents .footer1 ul li a:hover {
   align-items: center;
   flex-wrap: wrap;
   margin: 10% auto;
+  position: relative;
 }
 #Favorite .favorite {
   width: 100%;
@@ -1268,6 +1279,7 @@ footer .contents .footer1 ul li a:hover {
 #Favorite .favor_box {
   width: 908px;
   height: 200px;
+  position: initial;
 }
 #Favorite .favor_box .favor_ul {
   width: 1500px;
@@ -1292,4 +1304,7 @@ footer .contents .footer1 ul li a:hover {
 #Favorite .favor_box .favor_ul .favor_li p {
   font-size: 16px;
   text-align: center;
+}
+#Favorite .favor_box .swiper-button-next, #Favorite .favor_box .swiper-button-prev {
+  top: 62%;
 }

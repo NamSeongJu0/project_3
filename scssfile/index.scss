@@ -493,6 +493,7 @@
     align-items: center;
     flex-direction: column;
     margin: 10% auto;
+    position: relative;
 
     .head {
         width: 80%;
@@ -524,6 +525,7 @@
         justify-content: space-around;
         align-items: center;
         margin: 0 auto;
+        position: initial;
         
 
         .swiper {
@@ -629,6 +631,17 @@
             }
         }
     }
+
+    .swiper-button-next {
+        top: 58%;
+        right: 120px;
+    }
+
+    .swiper-button-prev {
+        top: 58%;
+        left: 120px;
+    }
+
 }
 
 
@@ -984,6 +997,7 @@
     align-items: center;
     flex-wrap: wrap;
     margin: 10% auto;
+    position: relative;
 
     .favorite {
         width: 100%;
@@ -1037,6 +1051,7 @@
     .favor_box {
         width: 908px;
         height: 200px;
+        position: initial;
 
         .favor_ul {
             width: 1500px;
@@ -1064,6 +1079,10 @@
                     text-align: center;
                 }
             }
+        }
+
+        .swiper-button-next, .swiper-button-prev {
+            top: 62%;
         }
     }
 }
