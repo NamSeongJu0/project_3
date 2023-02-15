@@ -27,180 +27,110 @@
 
         .swiper {
             width: 100%;
-            height: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
         }
 
         .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 200px;
         }
 
         .swiper-slide img {
             display: block;
             width: 100%;
-            height: 100%;
-            object-fit: cover;
         }
     </style>
 </head>
 
 <body>
     <!-- Swiper -->
-    <div class="dealbox swiper mySwiper">
-        <div class="deallist swiper-wrapper">
-            
-            <div class="list_box swiper-slide">
-                <div class="list_img">
+    <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="m_img">
 
                 </div>
 
-
-                <div class="list_info">
-
-                    <p id="day1"></p>
-
-                    <div id="list_count">
-
-                        <span>판매 수 : 503</span>
-                        <span>남은 개수 : 26</span>
-
-                        <div class="count">
-
-                        </div>
-
-                    </div>
+                <div class="m_info">
 
                 </div>
             </div>
-
-            <div class="list_box swiper-slide">
-                <div class="list_img">
+            <div class="swiper-slide">
+                <div class="m_img">
 
                 </div>
 
-
-                <div class="list_info">
-
-                    <p id="day2"></p>
-
-                    <div id="list_count">
-
-                        <span>판매 수 : 430</span>
-                        <span>남은 개수 : 112</span>
-
-                        <div class="count">
-
-                        </div>
-
-                    </div>
+                <div class="m_info">
 
                 </div>
             </div>
-
-            <div class="list_box swiper-slide">
-                <div class="list_img">
+            <div class="swiper-slide">
+                <div class="m_img">
 
                 </div>
 
-
-                <div class="list_info">
-
-                    <p id="day3"></p>
-
-                    <div id="list_count">
-
-                        <span>판매 수 : 321</span>
-                        <span>남은 개수 : 66</span>
-
-                        <div class="count">
-
-                        </div>
-
-                    </div>
+                <div class="m_info">
 
                 </div>
             </div>
-
-            <div class="list_box swiper-slide">
-                <div class="list_img">
-
-                </div>
-
-
-                <div class="list_info">
-
-                    <p id="day4"></p>
-
-                    <div id="list_count">
-
-                        <span>판매 수 : 344</span>
-                        <span>남은 개수 : 146</span>
-
-                        <div class="count">
-
-                        </div>
-
-                    </div>
+            <div class="swiper-slide">
+                <div class="m_img">
 
                 </div>
 
-            </div>
-
-            <div class="list_box swiper-slide">
-
-                <div class="list_img">
-
-                </div>
-
-
-                <div class="list_info">
-
-                    <p id="day5"></p>
-
-                    <div id="list_count">
-
-                        <span>판매 수 : 383</span>
-                        <span>남은 개수 : 46</span>
-
-                        <div class="count">
-
-                        </div>
-
-                    </div>
+                <div class="m_info">
 
                 </div>
             </div>
-
-            <div class="list_box swiper-slide">
-                <div class="list_img">
+            <div class="swiper-slide">
+                <div class="m_img">
 
                 </div>
 
+                <div class="m_info">
 
-                <div class="list_info">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="m_img">
 
-                    <p id="day6"></p>
+                </div>
 
-                    <div id="list_count">
+                <div class="m_info">
 
-                        <span>판매 수 : 303</span>
-                        <span>남은 개수 : 90</span>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="m_img">
 
-                        <div class="count">
+                </div>
 
-                        </div>
+                <div class="m_info">
 
-                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="m_img">
+
+                </div>
+
+                <div class="m_info">
+
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="m_img">
+
+                </div>
+
+                <div class="m_info">
 
                 </div>
             </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
     </div>
 
@@ -209,22 +139,20 @@
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 2,
-            spaceBetween: 30,
-            //   freeMode: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
+        var swiper = new Swiper(".mySwiper1", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
             },
-
             pagination: {
                 el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
             },
         });
     </script>

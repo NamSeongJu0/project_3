@@ -796,51 +796,6 @@ footer .contents .footer1 ul li a:hover {
   justify-content: center;
   align-items: center;
 }
-#Deals .deals .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-#Deals .deals .dealbox {
-  width: 1150px;
-  height: 100%;
-  border-top: 1px solid #afafaf;
-  border-left: 1px solid #afafaf;
-  overflow: hidden;
-}
-#Deals .deals .dealbox .swiper-button-next, #Deals .deals .dealbox .swiper-button-prev {
-  position: absolute;
-  top: var(swiper-navigation-top-offset, 50%);
-  width: calc(var(swiper-navigation-size) / 44 * 27);
-  height: var(swiper-navigation-size);
-  margin-top: calc(0px - var(swiper-navigation-size) / 2);
-  z-index: 10;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(swiper-navigation-color, var(swiper-theme-color));
-}
-#Deals .deals .dealbox .deallist {
-  width: 3450px;
-  height: 100%;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#Deals .deals .dealbox .deallist .list_box {
-  width: 575px;
-  height: 333px;
-  border-bottom: 1px solid #afafaf;
-  border-right: 1px solid #afafaf;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-left: 0px;
-}
 #Deals .deals .dealbox .deallist .list_box:hover {
   box-shadow: 2px 30px 10px rgba(221, 221, 221, 0.5);
 }
@@ -1191,18 +1146,22 @@ footer .contents .footer1 ul li a:hover {
   flex-direction: column;
   margin: 15% auto;
 }
+#Music .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#Music .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 433px;
+  height: 180px;
+}
 #Music h1 {
   width: 100%;
   font-size: 2.5rem;
   text-align: left;
   margin-bottom: 3%;
-}
-#Music .music {
-  width: 100%;
-  height: 250px;
-  border-top: 1px solid #afafaf;
-  border-left: 1px solid #afafaf;
-  overflow: hidden;
 }
 #Music .music .M_list {
   width: 3031px;
@@ -1217,42 +1176,41 @@ footer .contents .footer1 ul li a:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-top: 1px solid rgba(175, 175, 175, 0);
-  border-left: 1px solid rgba(175, 175, 175, 0);
-  border-right: 1px solid #afafaf;
-  border-bottom: 1px solid #afafaf;
 }
-#Music .slide_btn {
-  width: 200px;
-  height: 50px;
+#Music .music .M_list .m_list .m_img {
+  width: 140px;
+  height: 180px;
+}
+#Music .music .M_list .m_list .m_img a {
+  width: 100%;
+  height: 100%;
+}
+#Music .music .M_list .m_list .m_img a img {
+  width: 100%;
+  height: 100%;
+}
+#Music .music .M_list .m_list .m_info {
+  width: 275px;
+  height: 180px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 2%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
-#Music .slide_btn .sb_c {
-  background-color: #333;
-  position: relative;
+#Music .music .M_list .m_list .m_info h4 {
+  font-size: 0.9rem;
 }
-#Music .slide_btn .sb_c::after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 999;
-  border: 1px solid #333;
-  animation: sb_btn 0.5s ease;
+#Music .music .M_list .m_list .m_info span {
+  font-size: 16px;
+  color: #afafaf;
+  font-weight: bold;
 }
-#Music .slide_btn .sb {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-  background-color: #ddd;
+#Music .music .M_list .m_list .m_info p:nth-of-type(1) {
+  font-size: 16px;
+}
+#Music .music .M_list .m_list .m_info p:nth-of-type(2) {
+  font-size: 14px;
+  color: #ff0000;
 }
 
 #Favorite {
