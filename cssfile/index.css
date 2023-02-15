@@ -231,8 +231,6 @@ footer .contents .footer1 ul li a:hover {
   width: 1200px;
   height: 400px;
   display: flex;
-  overflow: hidden;
-  position: relative;
 }
 .main_slide .slide .slide_box {
   width: 5600px;
@@ -275,11 +273,13 @@ footer .contents .footer1 ul li a:hover {
 .main_slide .slide .slide_box .slide_b1 .slide_img {
   width: 60%;
   height: 100%;
-}
-.main_slide .slide .slide_box .slide_b1 .slide_img:nth-of-type(2) {
   position: relative;
 }
-.main_slide .slide .slide_box .slide_b1 .slide_img:nth-of-type(2) img:nth-of-type(2) {
+.main_slide .slide .slide_box .slide_b1 .slide_img img {
+  width: 80%;
+  height: 80%;
+}
+.main_slide .slide .slide_box .slide_b1 .slide_box2 img:nth-of-type(2) {
   position: absolute;
   top: 60px;
   right: 140px;
@@ -293,44 +293,99 @@ footer .contents .footer1 ul li a:hover {
     top: 40px;
   }
 }
-.main_slide .slide .slide_box .slide_b1 .slide_img img {
-  width: 80%;
-  height: 80%;
-}
-.main_slide .slide .slide_btn {
-  width: 120px;
-  height: 50px;
+.main_slide .slide .slide_box .slide_b1 .slide_box3 img:nth-of-type(2) {
+  width: 86px;
+  height: 46px;
   position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  top: 70px;
+  right: 180px;
+  animation: sky1 15s linear infinite backwards;
 }
-.main_slide .slide .slide_btn .sb_c {
-  background-color: #333;
-  position: relative;
-}
-.main_slide .slide .slide_btn .sb_c::after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
+.main_slide .slide .slide_box .slide_b1 .slide_box3 img:nth-of-type(3) {
+  width: 74px;
+  height: 40px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 999;
-  border: 1px solid #333;
-  animation: sb_btn 0.5s ease;
+  top: 10px;
+  right: 100px;
+  animation: sky1 17s linear infinite 3s backwards;
 }
-.main_slide .slide .slide_btn .sb {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-  background-color: #ddd;
+.main_slide .slide .slide_box .slide_b1 .slide_box3 img:nth-of-type(4) {
+  width: 86px;
+  height: 46px;
+  position: absolute;
+  top: 70px;
+  right: 100px;
+  animation: sky1 18s linear infinite 6s backwards;
+}
+.main_slide .slide .slide_box .slide_b1 .slide_box3 img:nth-of-type(5) {
+  width: 74px;
+  height: 40px;
+  position: absolute;
+  top: 30px;
+  right: 100px;
+  animation: sky1 20s linear infinite 9s backwards;
+}
+@keyframes sky1 {
+  0% {
+    right: 600px;
+    opacity: 0;
+  }
+  3% {
+    right: 600px;
+    opacity: 1;
+  }
+  100% {
+    right: 0px;
+    opacity: 0;
+  }
+}
+.main_slide .slide .slide_box .slide_b1 .slide_box4 img:nth-of-type(2) {
+  width: 101px;
+  height: 70px;
+  position: absolute;
+  right: 300px;
+  animation: sky2 1s linear infinite alternate;
+}
+.main_slide .slide .slide_box .slide_b1 .slide_box4 img:nth-of-type(3) {
+  width: 55px;
+  height: 71px;
+  position: absolute;
+  top: 200px;
+  right: 300px;
+  animation: sky3 1.5s linear infinite alternate;
+}
+.main_slide .slide .slide_box .slide_b1 .slide_box4 img:nth-of-type(4) {
+  width: 113px;
+  height: 80px;
+  position: absolute;
+  top: 200px;
+  right: 700px;
+  transform: translateY(0);
+  animation: sky2 2s linear infinite alternate;
+}
+.main_slide .slide .slide_box .slide_b1 .slide_box4 img:nth-of-type(5) {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50px;
+  right: 700px;
+  animation: sky 2.5s linear infinite alternate;
+}
+@keyframes sky2 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px) translateX(10px);
+  }
+}
+@keyframes sky3 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-15px) translateX(15px);
+  }
 }
 
 #Cate {
@@ -1305,6 +1360,7 @@ footer .contents .footer1 ul li a:hover {
   font-size: 16px;
   text-align: center;
 }
-#Favorite .favor_box .swiper-button-next, #Favorite .favor_box .swiper-button-prev {
+#Favorite .favor_box .swiper-button-next,
+#Favorite .favor_box .swiper-button-prev {
   top: 62%;
 }
