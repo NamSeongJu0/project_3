@@ -4,7 +4,7 @@
 
 
 // main_slide
-.main_slide {
+#main_slide {
     width: 100%;
     height: 500px;
     display: flex;
@@ -13,12 +13,25 @@
     background-image: url(../indeximg/bg.png);
     margin-bottom: 100px;
 
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+  
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+      }
+  
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
+
     .slide {
         width: 1200px;
         height: 400px;
         display: flex;
-        // overflow: hidden;
-        // position: relative;
 
         .slide_box {
             width: 5600px;
@@ -61,6 +74,32 @@
                         margin-top: 3%;
                     }
 
+                    .button:hover {
+                        animation: btn1 0.5s ease;
+                    }
+
+                    @keyframes btn1 {
+                        0% {
+                            transform: scale(1, 1);
+                        }
+
+                        25% {
+                            transform: scale(0.9 1.1);
+                        }
+
+                        50% {
+                            transform: scale(1.1 0.9);
+                        }
+
+                        75% {
+                            transform: scale(0.95 1.05);
+                        }
+
+                        // 100% {
+                        //     transform: scale(1, 1);
+                        // }
+                    }
+
                 }
 
                 .slide_img {
@@ -79,7 +118,7 @@
                     img:nth-of-type(2) {
                         position: absolute;
                         top: 60px;
-                        right: 140px;
+                        right: 115px;
                         animation: sky 1s infinite alternate;
                     }
 
@@ -93,8 +132,6 @@
                         }
                     }
                 }
-
-
 
                 .slide_box3 {
 
@@ -160,7 +197,8 @@
                         width: 101px;
                         height: 70px;
                         position: absolute;
-                        right: 300px;
+                        top: 75px;
+                        right: 200px;
                         animation: sky2 1s linear infinite alternate;
                     }
 
@@ -168,7 +206,7 @@
                         width: 55px;
                         height: 71px;
                         position: absolute;
-                        top: 200px;
+                        top: 254px;
                         right: 300px;
                         animation: sky3 1.5s linear infinite alternate;
                     }
@@ -178,7 +216,7 @@
                         height: 80px;
                         position: absolute;
                         top: 200px;
-                        right: 700px;
+                        right: 620px;
                         transform: translateY(0);
                         animation: sky2 2s linear infinite alternate;
                     }
@@ -188,7 +226,7 @@
                         height: 80px;
                         position: absolute;
                         top: 50px;
-                        right: 700px;
+                        right: 620px;
                         animation: sky 2.5s linear infinite alternate;
                     }
 

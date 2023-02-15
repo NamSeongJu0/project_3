@@ -1,36 +1,38 @@
 // swiper1
-$(document).ready(function () {
+$(document).ready(function() {
 
-    // swiper1
+    // $('slide_b1:nth-of-type(2), slide_b1:nth-of-type(3), slide_b1:nth-of-type(4)').css("display", "none");
+
+    $("slide_b1").mouseenter(function() {
+        $(this).swiper().stop();
+    })
+
     var swiper = new Swiper(".mySwiper1", {
-
         spaceBetween: 30,
         effect: "fade",
 
-        loop: true,
-
-        autoplay: {
-            delay: 1500,
-            disableOnInteraction: false,
+        fadeEffect: {
+            crossFade: true,
         },
 
+        observer: true,
+        observeParents: true,
+  
+        loop: true,
+  
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        
+      });
 
-        // navigation: {
-        //   nextEl: ".swiper-button-next",
-        //   prevEl: ".swiper-button-prev",
-        // },
-
-        // pagination: {
-        //   el: ".swiper-pagination",
-        //   clickable: true,
-        // },
-    });
 });
 
 
 
 // swiper2
-$(document).ready(function () {
+$(document).ready(function() {
 
     // swiper1
     var swiper = new Swiper(".mySwiper2", {
@@ -49,7 +51,7 @@ $(document).ready(function () {
 
 
 // swiper3
-$(document).ready(function () {
+$(document).ready(function() {
 
     var swiper = new Swiper(".mySwiper3", {
 
@@ -76,7 +78,7 @@ $(document).ready(function () {
 
 
 // swiper4
-$(document).ready(function () {
+$(document).ready(function() {
 
     var swiper = new Swiper(".mySwiper4", {
 

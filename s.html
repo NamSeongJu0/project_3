@@ -31,140 +31,57 @@
     }
 
     .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 250px;
-      height: 180px;
-      border-radius: 50%;
+      background-position: center;
+      background-size: cover;
     }
 
     .swiper-slide img {
       display: block;
       width: 100%;
-      height: 100%;
-      object-fit: cover;
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
     }
   </style>
 </head>
 
 <body>
-   <!-- swiper4 -->
-   <div class="favor_box swiper mySwiper4">
-
-    <ul class="favor_ul swiper-wrapper">
-
-        <li class="favor_li swiper-slide">
-            <img src="indeximg/f1.jpg" alt="">
-            <p>정세람</p>
-        </li>
-
-        <li class="favor_li swiper-slide">
-            <img src="indeximg/f2.jpg" alt="">
-            <p>장강명</p>
-        </li>
-
-        <li class="favor_li swiper-slide">
-            <img src="indeximg/f3.jpg" alt="">
-            <p>최은영</p>
-        </li>
-
-        <li class="favor_li swiper-slide">
-            <img src="indeximg/f4.png" alt="">
-            <p>이민진</p>
-        </li>
-
-        <li class="favor_li swiper-slide">
-            <img src="indeximg/f5.jpg" alt="">
-            <p>김영하</p>
-        </li>
-
-        <li class="favor_li swiper-slide">
-            <img src="indeximg/f6.jpg" alt="">
-            <p>장류진</p>
-        </li>
-
-        <li class="favor_li swiper-slide">
-            <img src="indeximg/f7.jpg" alt="">
-            <p>안정효</p>
-        </li>
-
-        <li class="favor_li swiper-slide">
-            <img src="indeximg/f8.jpg" alt="">
-            <p>박상영</p>
-        </li>
-
-    </ul>
-</div>
-
-
-<div class="swiper-pagination"></div>
-
-</div>
-<div class="swiper-button-next"></div>
-<div class="swiper-button-prev"></div>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper(".mySwiper4", {
-
-
-    grabCursor: true,
-    slidesPerView: 3,
+    var swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
-      freeMode: true,
-
+      effect: "fade",
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
       },
-
-      navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-
     });
   </script>
 </body>
 
 </html>
-
-
-
-
-
-<!-- .slide_box2 {
-                .slide_img {
-                    &:nth-of-type(2) {
-                        position: relative;
-    
-                        img:nth-of-type(2) {
-                            position: absolute;
-                            top: 60px;
-                            right: 140px;
-                            animation: sky 1s infinite alternate;
-                        }
-    
-                        @keyframes sky {
-                            from {
-                                top: 60px;
-                            }
-    
-                            to {
-                                top: 40px;
-                            }
-                        }
-                    }
-                }
-            }
-        } -->
