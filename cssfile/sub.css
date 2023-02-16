@@ -240,12 +240,12 @@ footer .contents .footer1 ul li a:hover {
   font-size: 16px;
 }
 
-#Fox {
+#Photo {
   width: 100%;
   height: 710px;
   background-color: coral;
 }
-#Fox .fox_book {
+#Photo .photo_book {
   width: 80%;
   height: 100%;
   background-color: antiquewhite;
@@ -254,16 +254,16 @@ footer .contents .footer1 ul li a:hover {
   align-items: center;
   margin: 0 auto;
 }
-#Fox .fox_book .fox_img {
+#Photo .photo_book .photo_img {
   width: 620px;
   height: 450px;
   text-align: center;
 }
-#Fox .fox_book .fox_img img {
+#Photo .photo_book .photo_img img {
   width: 300px;
   height: 100%;
 }
-#Fox .fox_book .sub_info {
+#Photo .photo_book .sub_info {
   width: 620px;
   height: 100%;
   background-color: aqua;
@@ -272,35 +272,35 @@ footer .contents .footer1 ul li a:hover {
   align-items: flex-start;
   flex-direction: column;
 }
-#Fox .fox_book .sub_info .subinfo {
+#Photo .photo_book .sub_info .subinfo {
   width: 100%;
-  height: 250px;
+  height: 354px;
   background-color: burlywood;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
 }
-#Fox .fox_book .sub_info .subinfo h1 {
+#Photo .photo_book .sub_info .subinfo h1 {
   font-size: 2rem;
 }
-#Fox .fox_book .sub_info .subinfo .span_box {
+#Photo .photo_book .sub_info .subinfo .span_box {
   margin: 20px 0;
 }
-#Fox .fox_book .sub_info .subinfo .option_box {
+#Photo .photo_book .sub_info .subinfo .option_box {
   width: 490px;
   height: 60px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-#Fox .fox_book .sub_info .subinfo .option_box .option {
+#Photo .photo_book .sub_info .subinfo .option_box .option {
   width: 120px;
   height: 100%;
   border-bottom: 1px solid #afafaf;
   margin-right: 30px;
 }
-#Fox .fox_book .sub_info .sb_box {
+#Photo .photo_book .sub_info .sb_box {
   width: 100%;
   height: 250px;
   background-color: cornflowerblue;
@@ -309,23 +309,24 @@ footer .contents .footer1 ul li a:hover {
   align-items: center;
   flex-direction: column;
 }
-#Fox .fox_book .sub_info .sb_box .story {
+#Photo .photo_book .sub_info .sb_box .story {
   width: 100%;
-  height: 150px;
+  height: 130px;
   background-color: chocolate;
 }
-#Fox .fox_book .sub_info .sb_box .story p {
+#Photo .photo_book .sub_info .sb_box .story p {
   width: 100%;
   height: 110px;
 }
-#Fox .fox_book .sub_info .sb_box .buttons {
+#Photo .photo_book .sub_info .sb_box .buttons {
   width: 100%;
-  height: 100px;
+  height: 80px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  border-bottom: 1px solid #afafaf;
 }
-#Fox .fox_book .sub_info .sb_box .buttons .button {
+#Photo .photo_book .sub_info .sb_box .buttons .button {
   width: 120px;
   height: 50px;
   background-color: #fff;
@@ -335,13 +336,17 @@ footer .contents .footer1 ul li a:hover {
   align-items: center;
   margin: 0 20px;
 }
-#Fox .fox_book .sub_info .sb_box .buttons .button span {
+#Photo .photo_book .sub_info .sb_box .buttons .button span {
   width: 20px;
   height: 20px;
   line-height: 20px;
   text-align: center;
 }
-#Fox .fox_book .sub_info .sb_box .buttons .button1 {
+#Photo .photo_book .sub_info .sb_box .buttons .button span:nth-of-type(1):hover,
+#Photo .photo_book .sub_info .sb_box .buttons .button span:nth-of-type(3):hover {
+  cursor: pointer;
+}
+#Photo .photo_book .sub_info .sb_box .buttons .button1 {
   width: 180px;
   height: 50px;
   background-color: #333;
@@ -350,7 +355,7 @@ footer .contents .footer1 ul li a:hover {
   border-radius: 15px;
   line-height: 50px;
 }
-#Fox .fox_book .sub_info .sb_box .buttons .button1:hover {
+#Photo .photo_book .sub_info .sb_box .buttons .button1:hover {
   cursor: pointer;
   animation: jelly 0.5s ease;
 }
@@ -371,24 +376,39 @@ footer .contents .footer1 ul li a:hover {
     transform: scale(1, 1);
   }
 }
-#Fox .fox_book .sub_info .sum {
+#Photo .photo_book .sub_info .sum {
   width: 150px;
   height: 50px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-#Fox .fox_book .sub_info .sum span {
-  margin: 0 20px;
+#Photo .photo_book .sub_info .sum span {
+  margin: 0 30px 0 20px;
 }
-#Fox .fox_book .sub_info .icon_share {
-  width: 310px;
-  height: 60px;
+#Photo .photo_book .sub_info .icon_share {
+  width: 420px;
+  height: 40px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#Fox .fox_book .sub_info .icon_share .add i, #Fox .fox_book .sub_info .icon_share .share i {
+#Photo .photo_book .sub_info .icon_share .add, #Photo .photo_book .sub_info .icon_share .share {
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+}
+#Photo .photo_book .sub_info .icon_share .add a, #Photo .photo_book .sub_info .icon_share .share a {
+  width: 100%;
+  height: 100%;
+}
+#Photo .photo_book .sub_info .icon_share .add i, #Photo .photo_book .sub_info .icon_share .share i {
   padding-right: 10px;
 }
-#Fox .fox_book .sub_info .icon_share .add {
+#Photo .photo_book .sub_info .icon_share .add i:hover, #Photo .photo_book .sub_info .icon_share .share i:hover {
+  color: lightpink;
+  transition: all 0.5s ease;
+}
+#Photo .photo_book .sub_info .icon_share .add {
   margin: 0 30px 0 20px;
 }
