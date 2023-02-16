@@ -274,10 +274,10 @@ footer .contents .footer1 ul li a:hover {
 }
 #Fox .fox_book .sub_info .subinfo {
   width: 100%;
-  height: 350px;
+  height: 250px;
   background-color: burlywood;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
 }
@@ -291,19 +291,104 @@ footer .contents .footer1 ul li a:hover {
   width: 490px;
   height: 60px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
 }
 #Fox .fox_book .sub_info .subinfo .option_box .option {
   width: 120px;
   height: 100%;
   border-bottom: 1px solid #afafaf;
+  margin-right: 30px;
 }
-#Fox .fox_book .sub_info .subinfo .story {
+#Fox .fox_book .sub_info .sb_box {
+  width: 100%;
+  height: 250px;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+#Fox .fox_book .sub_info .sb_box .story {
   width: 100%;
   height: 150px;
+  background-color: chocolate;
 }
-#Fox .fox_book .sub_info .subinfo .story p {
+#Fox .fox_book .sub_info .sb_box .story p {
   width: 100%;
   height: 110px;
+}
+#Fox .fox_book .sub_info .sb_box .buttons {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#Fox .fox_book .sub_info .sb_box .buttons .button {
+  width: 120px;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #afafaf;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 20px;
+}
+#Fox .fox_book .sub_info .sb_box .buttons .button span {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+#Fox .fox_book .sub_info .sb_box .buttons .button1 {
+  width: 180px;
+  height: 50px;
+  background-color: #333;
+  text-align: center;
+  color: white;
+  border-radius: 15px;
+  line-height: 50px;
+}
+#Fox .fox_book .sub_info .sb_box .buttons .button1:hover {
+  cursor: pointer;
+  animation: jelly 0.5s ease;
+}
+@keyframes jelly {
+  0% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+#Fox .fox_book .sub_info .sum {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#Fox .fox_book .sub_info .sum span {
+  margin: 0 20px;
+}
+#Fox .fox_book .sub_info .icon_share {
+  width: 310px;
+  height: 60px;
+  display: flex;
+}
+#Fox .fox_book .sub_info .icon_share .add i, #Fox .fox_book .sub_info .icon_share .share i {
+  padding-right: 10px;
+}
+#Fox .fox_book .sub_info .icon_share .add {
+  margin: 0 30px 0 20px;
 }

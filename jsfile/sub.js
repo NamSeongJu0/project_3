@@ -18,16 +18,11 @@ $(document).ready(function() {
 
                 $(".fox_book .fox_img").eq(i).append('<a href="#">' + "<img src = '" + msg.documents[i].thumbnail + "'/>" + "</a>");
 
-                $(".fox_book .subinfo").eq(i).prepend("<h1>" + str2 + "</h1>")
-
-                .append("<p>" + "정가 : " + msg.documents[i].price + "원" + "</p>")
-                // .append("<p>" + msg.documents[i].publisher + "</p>");
+                $(".fox_book .subinfo").eq(i).prepend("<h1>" + str2 + "</h1>");
 
 
-                $(".bookinfo").eq(i).find(".spen1").append("ADD TO CART");
-
-                $(".bookinfo").eq(i).find(".img_2").append('<img src = "indeximg/my2.png" />', '<img src = "indeximg/my5.png"/>');
-
+                $(".sb_box").eq(i).find(".story").append("<p>" + msg.documents[i].contents + "</p>");
+                console.log("story")
             }
 
         });
