@@ -138,6 +138,7 @@ header {
                 &:hover {
                     color: #dbc3c2;
                     transition: all 0.5s ease;
+                    cursor: pointer;
                 }
             }
 
@@ -153,6 +154,7 @@ header {
                     transform: scale(1.1);
                     transition: all 0.5s ease;
                     background-color: #dbc3c2;
+                    cursor: pointer;
                 }
             }
         }

@@ -358,3 +358,64 @@ $(document).ready(function () {
     });
 });
 
+
+
+// 스크롤 이벤트
+$(document).ready(function () {
+    $(window).scroll(function () {
+        $('#Bestseller').each(function () {
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 2;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            if (bottom_of_window > bottom_of_element) {
+                $(this).animate({'opacity': '1'}, 750);
+            }
+        });
+
+        $('#Featured').each(function () {
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 2;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            if (bottom_of_window > bottom_of_element) {
+                $(this).animate({'opacity': '1'}, 750);
+            }
+        });
+
+        $('#Deals').each(function () {
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 2;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            if (bottom_of_window > bottom_of_element) {
+                $(this).animate({'opacity': '1'}, 750);
+            }
+        });
+
+        $('#Releases').each(function () {
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 2;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            if (bottom_of_window > bottom_of_element) {
+                $(this).animate({'opacity': '1'}, 750);
+            }
+        });
+
+        $('#Music').each(function () {
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 2;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            if (bottom_of_window > bottom_of_element) {
+                $(this).animate({'opacity': '1'}, 750);
+            }
+        });
+
+        $('#Favorite').each(function () {
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 2;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            if (bottom_of_window > bottom_of_element) {
+                $(this).animate({'opacity': '1'}, 750);
+            }
+        });
+    });
+});
+

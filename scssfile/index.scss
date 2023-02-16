@@ -332,6 +332,7 @@
     width: 80%;
     height: auto;
     margin: 200px auto;
+    opacity: 0;
 
 
     h1 {
@@ -417,6 +418,10 @@
                     font-size: 18px;
                 }
 
+                .spen1:hover {
+                    cursor: pointer;
+                }
+
                 .img_2 {
                     width: 60px;
                     display: flex;
@@ -445,6 +450,7 @@
 #Featured {
     width: 100%;
     height: auto;
+    opacity: 0;
 
     .Featured_1 {
         width: 80%;
@@ -614,6 +620,7 @@
     flex-direction: column;
     margin: 10% auto;
     position: relative;
+    opacity: 0;
 
     .head {
         width: 80%;
@@ -771,6 +778,7 @@
     width: 100%;
     height: auto;
     margin: 10% auto;
+    opacity: 0;
 
     .releases {
         width: 80%;
@@ -1001,6 +1009,10 @@
                                 font-size: 16px;
                             }
 
+                            .spen1:hover {
+                                cursor: pointer;
+                            }
+
                             .img_2 {
                                 width: 60px;
                                 display: flex;
@@ -1038,6 +1050,7 @@
     align-items: center;
     flex-direction: column;
     margin: 15% auto;
+    opacity: 0;
 
 
     .swiper {
@@ -1052,12 +1065,6 @@
         width: 433px;
         height: 180px;
     }
-
-    //   .swiper-slide img {
-    //     display: block;
-    //     width: 100%;
-    //   }
-
 
     h1 {
         width: 100%;
@@ -1141,6 +1148,7 @@
     flex-wrap: wrap;
     margin: 10% auto;
     position: relative;
+    opacity: 0;
 
     .favorite {
         width: 100%;
@@ -1230,3 +1238,5 @@
         }
     }
 }
+
+
