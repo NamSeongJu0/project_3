@@ -1,11 +1,12 @@
 // swiper1
 $(document).ready(function() {
 
-    // $('slide_b1:nth-of-type(2), slide_b1:nth-of-type(3), slide_b1:nth-of-type(4)').css("display", "none");
-
-    $("slide_b1").mouseenter(function() {
-        $(this).swiper().stop();
-    })
+    // mySwiper1 멈춤
+    $('.swiper-slide').hover(function() {
+        swiper.autoplay.stop();
+    }, function() {
+        swiper.autoplay.start();
+    });
 
     var swiper = new Swiper(".mySwiper1", {
         spaceBetween: 30,
