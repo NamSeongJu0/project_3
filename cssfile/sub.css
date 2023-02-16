@@ -281,11 +281,33 @@ footer .contents .footer1 ul li a:hover {
   align-items: flex-start;
   flex-direction: column;
 }
+#Photo .photo_book .sub_info .subinfo .img_text {
+  width: 45%;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#Photo .photo_book .sub_info .subinfo .img_text img {
+  width: 20px;
+  height: 20px;
+}
+#Photo .photo_book .sub_info .subinfo .img_text img:nth-of-type(5) {
+  margin-right: 20px;
+}
+#Photo .photo_book .sub_info .subinfo .img_text span {
+  color: #ff0000;
+  font-size: 16px;
+}
+#Photo .photo_book .sub_info .subinfo p {
+  font-size: 16px;
+}
 #Photo .photo_book .sub_info .subinfo h1 {
   font-size: 2rem;
 }
 #Photo .photo_book .sub_info .subinfo .span_box {
-  margin: 20px 0;
+  font-size: 16px;
+  margin: 10px 0;
 }
 #Photo .photo_book .sub_info .subinfo .option_box {
   width: 490px;
@@ -297,6 +319,10 @@ footer .contents .footer1 ul li a:hover {
 #Photo .photo_book .sub_info .subinfo .option_box .option {
   width: 120px;
   height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
   border-bottom: 1px solid #afafaf;
   margin-right: 30px;
 }

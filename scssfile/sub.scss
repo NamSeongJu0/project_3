@@ -73,12 +73,39 @@
                 align-items: flex-start;
                 flex-direction: column;
 
+                .img_text {
+                    width: 45%;
+                    height: 40px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+
+                        &:nth-of-type(5) {
+                            margin-right: 20px;
+                        }
+                    }
+
+                    span {
+                        color: #ff0000;
+                        font-size: 16px;
+                    }
+                }
+
+                p {
+                    font-size: 16px;
+                }
+
                 h1 {
                     font-size: $font_h2;
                 }
 
                 .span_box {
-                    margin: 20px 0;
+                    font-size: 16px;
+                    margin: 10px 0;
                 }
 
                 .option_box {
@@ -91,6 +118,10 @@
                     .option {
                         width: 120px;
                         height: 100%;
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        flex-direction: column;
                         border-bottom: 1px solid #afafaf;
                         margin-right: 30px;
                     }
