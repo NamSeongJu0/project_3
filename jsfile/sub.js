@@ -3,7 +3,7 @@ $(document).ready(function() {
     $.ajax({
         method: "GET",
         url: "https://dapi.kakao.com/v3/search/book?target=title",
-        data: { query: "사진" },
+        data: { query: "세상의 마지막 기차역" },
         headers: { Authorization: "KakaoAK 6f9bb4da749b9b559e49e18decbe669a" }
     })
 
@@ -17,7 +17,7 @@ $(document).ready(function() {
                 var str2 = str.substring(0, 20);
 
                 var str1 = msg.documents[i].contents;
-                var str3 = str1.substring(0, 170);
+                var str3 = str1.substring(0, 176);
 
                 $(".photo_book .subinfo").eq(i).append("<br>" + "<p>" + "정가 : " + msg.documents[i].price + "원" + "</p>").append("<p>" + "판매가 : " + msg.documents[i].sale_price + "원" + "</p>").prepend("<h2>" + msg.documents[i].authors + "</h2>" + "<br>").prepend("<h1>" + str2 + "</h1>");
 
