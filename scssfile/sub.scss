@@ -306,6 +306,67 @@
 
 
 
+// Social
+#Book_info  {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #afafaf;
+
+    .social {
+        width: 50%;
+        height: 900px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 20px;
+        margin: 0 auto;
+
+        h3 {
+            font-size: $font_h5;
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            font-size: 18px;
+            font-weight: 100;
+        }
+
+        p{
+            font-size: 18px;
+        }
+
+        .introduce {
+            width: 100%;
+            height: auto;
+        }
+
+        .contents {
+            width: 100%;
+            height: auto;
+        }
+
+        .story {
+            width: 100%;
+            height: auto;
+        }
+
+        .review {
+            width: 100%;
+            height: auto;
+
+            li {
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
 
 
 

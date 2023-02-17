@@ -463,3 +463,53 @@ footer .contents .footer1 ul li a:hover {
 #sub_bottom ul li a {
   font-size: 1rem;
 }
+
+#Book_info {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #afafaf;
+}
+#Book_info .social {
+  width: 50%;
+  height: 900px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 0 auto;
+}
+#Book_info .social h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+#Book_info .social h4 {
+  font-size: 18px;
+  font-weight: 100;
+}
+#Book_info .social p {
+  font-size: 18px;
+}
+#Book_info .social .introduce {
+  width: 100%;
+  height: auto;
+}
+#Book_info .social .contents {
+  width: 100%;
+  height: auto;
+}
+#Book_info .social .story {
+  width: 100%;
+  height: auto;
+}
+#Book_info .social .review {
+  width: 100%;
+  height: auto;
+}
+#Book_info .social .review li {
+  margin-bottom: 10px;
+}
+#Book_info .social .review p {
+  font-size: 16px;
+}

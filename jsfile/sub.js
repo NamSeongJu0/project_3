@@ -21,7 +21,7 @@ $(document).ready(function() {
 
                 $(".photo_book .subinfo").eq(i).append("<br>" + "<p>" + "정가 : " + msg.documents[i].price + "원" + "</p>").append("<p>" + "판매가 : " + msg.documents[i].sale_price + "원" + "</p>").prepend("<h2>" + msg.documents[i].authors + "</h2>" + "<br>").prepend("<h1>" + str2 + "</h1>");
 
-                // $(".img_text .publisher").append("<h4>" + msg.documents[i].publisher + "</h4>")
+                $(".img_text .publisher").append("<h4>" + msg.documents[i].publisher + "</h4>");
 
 
                 $(".sb_box .story").eq(i).append("<p>" + str3 + "</p>");
@@ -37,5 +37,13 @@ $(document).ready(function() {
 $(document).ready(function() {
     $(".btn").click(function() {
         $(this).css("transform", "scale(1.2)");
+    });
+});
+
+
+// Social.text 가져오기
+$(document).ready(function() {
+    $.get("sub_text/social.txt", function (data) {
+        $(".social").html(data);
     });
 });
