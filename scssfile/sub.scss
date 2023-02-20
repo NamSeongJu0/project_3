@@ -503,7 +503,54 @@
                 width: 80%;
                 height: 100%;
                 background-color: aquamarine;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column;
                 margin: 0 auto;
+
+                .custom1 {
+                    width:70%;
+                    height: 20px;
+                    background-color: brown;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+
+
+                    span {
+                        font-size: 16px;
+                    }
+
+                    .cus_bar {
+                        width: 130px;
+                        height: 8px;
+                        background-color: #fff3e4;
+                        border-radius: 15px;
+                        position: relative;
+                        
+                        .cus_bar:nth-of-type(3) {
+                            margin-right: 7px;
+                        }
+
+                        &:nth-of-type(4) {
+                            margin-right: 7px;
+                        }
+
+                        &:nth-of-type(5) {
+                            margin-right: 7px;
+                        }
+
+                        &::after {
+                            content: "";
+                            width: 100px;
+                            height: 100%;
+                            background-color: #fbfb30;
+                            border-radius: 15px;
+                            position: absolute;
+                        }
+                    }
+                }
             }
         }
 
