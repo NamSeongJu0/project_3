@@ -52,3 +52,7 @@ $(document).ready(function() {
         $(".reviews_1").html(data);
     });
 });
+
+
+
+// .re_input 부분
