@@ -46,4 +46,9 @@ $(document).ready(function() {
     $.get("sub_text/social.txt", function (data) {
         $(".social").html(data);
     });
+
+
+    $.get("sub_text/reviews.txt", function (data) {
+        $(".reviews_1").html(data);
+    });
 });
