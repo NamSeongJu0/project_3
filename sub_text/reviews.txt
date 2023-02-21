@@ -19,9 +19,9 @@
 
 	<div class = "lh_box">
 
-		<img src = "../subimg/like.png" alt = "like">
+		<i class="fa-regular fa-thumbs-up"></i>
 		<span>77</span>
-		<img src = "../subimg/hate.png" alt = "hate">
+		<i class="fa-regular fa-thumbs-down"></i>
 		<span>1</span>
 
 	</div>
@@ -29,7 +29,6 @@
 </div>
 </div>
 
-<hr>
 <br>
 
 
@@ -51,9 +50,9 @@
 
 	<div class = "lh_box">
 
-		<img src = "../subimg/like.png" alt = "like">
+		<i class="fa-regular fa-thumbs-up"></i>
 		<span>102</span>
-		<img src = "../subimg/hate.png" alt = "hate">
+		<i class="fa-regular fa-thumbs-down"></i>
 		<span>3</span>
 
 	</div>
@@ -61,7 +60,6 @@
 </div>
 </div>
 
-<hr>
 <br>
 
 
@@ -87,9 +85,9 @@
 
 	<div class = "lh_box">
 
-		<img src = "../subimg/like.png" alt = "like">
+		<i class="fa-regular fa-thumbs-up"></i>
 		<span>80</span>
-		<img src = "../subimg/hate.png" alt = "hate">
+		<i class="fa-regular fa-thumbs-down"></i>
 		<span>1</span>
 
 	</div>
@@ -97,7 +95,6 @@
 </div>
 </div>
 
-<hr>
 <br>
 
 
@@ -121,9 +118,9 @@
 
 	<div class = "lh_box">
 
-		<img src = "../subimg/like.png" alt = "like">
+		<i class="fa-regular fa-thumbs-up"></i>
 		<span>83</span>
-		<img src = "../subimg/hate.png" alt = "hate">
+		<i class="fa-regular fa-thumbs-down"></i>
 		<span>4</span>
 
 	</div>
@@ -131,5 +128,4 @@
 </div>
 </div>
 
-<hr>
 <br>
