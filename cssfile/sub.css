@@ -744,6 +744,12 @@ footer .contents .footer1 ul li a:hover {
   font-size: 18px;
   margin: 15px 0;
 }
+#Review_info .re_input .input_box .re_star2 {
+  position: absolute;
+  z-index: -1;
+  bottom: 0%;
+  display: none;
+}
 #Review_info .re_input p {
   margin-left: 20px;
 }
@@ -779,4 +785,135 @@ footer .contents .footer1 ul li a:hover {
   100% {
     transform: scale(1, 1);
   }
+}
+
+#Bestseller {
+  width: 80%;
+  height: auto;
+  margin: 200px auto;
+}
+#Bestseller h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+#Bestseller .booklist {
+  width: 100%;
+  height: 365px;
+  border-right: 1px solid #afafaf;
+  border-left: 1px solid #afafaf;
+  border-top: 1px solid #afafaf;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#Bestseller .booklist .bookinfo {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-right: 1px solid #afafaf;
+  border-left: 1px solid #afafaf;
+  border-bottom: 1px solid #afafaf;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+}
+#Bestseller .booklist .bookinfo h4 {
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+#Bestseller .booklist .bookinfo span {
+  color: #afafaf;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+#Bestseller .booklist .bookinfo p {
+  font-size: 12px;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 5px;
+  z-index: 5;
+  bottom: 0;
+}
+#Bestseller .booklist .bookinfo p:last-child {
+  color: #ff0000;
+}
+#Bestseller .booklist .bookinfo img {
+  width: 100%;
+}
+#Bestseller .booklist .bookinfo .info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  border: none;
+  position: relative;
+  z-index: 5;
+}
+#Bestseller .booklist .bookinfo .img {
+  width: 93%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 3px;
+  right: 10px;
+}
+#Bestseller .booklist .bookinfo .img .spen1 {
+  font-size: 18px;
+}
+#Bestseller .booklist .bookinfo .img .spen1:hover {
+  cursor: pointer;
+}
+#Bestseller .booklist .bookinfo .img .img_2 {
+  width: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#Bestseller .booklist .bookinfo .img .img_2 img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+#Bestseller .booklist .bookinfo .img .img_2 img:first-child:hover, #Bestseller .booklist .bookinfo .img .img_2 img:nth-of-type(2):hover {
+  transition: all 0.5s ease;
+  background-color: lightpink;
+  cursor: pointer;
+}
+
+#table {
+  width: 100%;
+  height: auto;
+}
+#table table {
+  width: 60%;
+  height: 700px;
+  border: 1px solid #afafaf;
+  margin: 70px auto;
+  border-collapse: collapse;
+}
+#table table tbody {
+  width: 100%;
+  height: 100%;
+}
+#table table tbody th, #table table tbody td {
+  border: 1px solid #afafaf;
+}
+#table table tbody th td ul, #table table tbody td td ul {
+  box-sizing: border-box;
+  padding: 5px;
+}
+#table table tbody th td ul li, #table table tbody td td ul li {
+  font-size: 5px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+#table table tbody th td ul li::marker, #table table tbody td td ul li::marker {
+  list-style: circle;
 }
