@@ -370,6 +370,9 @@ footer .contents .footer1 ul li a:hover {
 #Photo .photo_book .sub_info .subinfo .option_box .option:hover {
   cursor: pointer;
 }
+#Photo .photo_book .sub_info .subinfo .option_box .option_border {
+  border-bottom: 2px solid #000000;
+}
 #Photo .photo_book .sub_info .sb_box {
   width: 100%;
   height: 250px;

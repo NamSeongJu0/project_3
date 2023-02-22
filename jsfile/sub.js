@@ -106,30 +106,63 @@ $(function() {
     });
 
     $(".sum2").append("<span>" + sum.toString().replace(/\B(?=(\d{3}) + (?!\d))/g, ",") + "원 </span>");
-})
 
 
+    $('.option').click(function() {
+        $('.option').removeClass("option_border");
+        $(this).addClass("option_border");
+    });
 
-// 더하기 빼기
-$(function() {
+
     $(".p_btn").click(function() {
         $(".price").val(parseInt($(".price").val()) +1);
 
         var sum2 = parseInt($('.price').val() * sum);
-        $(".sum2").html("<span>" + sum.toString().replace(/\B(?=(\d{3}) + (?!\d))/g, ",") + "원 </span>");
+        $(".sum2").html("<span>" + sum2.toString().replace(/\B(?=(\d{3}) + (?!\d))/g, ",") + "원 </span>");
     });
+
+    var pr = $('.price').val();
 
     $(".m_btn").click(function() {
         $(".price").val(parseInt($(".price").val()) -1);
 
         var sum2 = parseInt($('.price').val() * sum);
-        $(".sum2").html("<span>" + sum.toString().replace(/\B(?=(\d{3}) + (?!\d))/g, ",") + "원 </span>");
+        $(".sum2").html("<span>" + sum2.toString().replace(/\B(?=(\d{3}) + (?!\d))/g, ",") + "원 </span>");
 
         if($('.price').val() < 1) {
             alert("1권 이상 구매 해야 됩니다.");
-        }
+            $('.price').val(1);
+        };
     });
-})
+    
+    // keyup()
+
+    $('.price').keyup(function() {
+        if($('.price').val() < 1) {
+            alert("1권 이상 구매 해야 됩니다.");
+            $('.price').val(1);
+        }
+
+        else if(isNaN($('.price').val())) {
+            alert("숫자를 입력 해야 됩니다.");
+            $('.price').val(1);
+        }
+
+        else if(($('price').val()*10) % 10 != 0) {
+            alert("정수를 입력 해야 됩니다.");
+            $('.price').val(1);
+        }
+
+        var sum4 = parseInt($('.price').val() * sum);
+        $(".sum2").html("<span>" + sum4.toString().replace(/\B(?=(\d{3}) + (?!\d))/g, ",") + "원 </span>");
+    });
+});
+
+
+
+
+
+
 
 
 
