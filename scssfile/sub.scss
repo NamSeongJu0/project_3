@@ -352,10 +352,6 @@
             text-align: center;
             line-height: 60px;
 
-            // &:hover {
-
-            // }
-
             a {
                 font-size: 1rem;
             }
@@ -364,10 +360,14 @@
     }
 }
 
+.roll {
+    background-color: #ddd;
+}
+
 
 
 // Social
-#Book_info {
+#Book_info1 {
     width: 100%;
     height: auto;
     border-bottom: 1px solid #afafaf;
@@ -602,7 +602,7 @@
 }
 
 
-#Review_info {
+#Review_info1 {
     width: 100%;
     height: auto;
     border-bottom: 1px solid #afafaf;
@@ -885,7 +885,7 @@
 
 
 // 반송/반품 부분
-#table {
+#table1 {
     width: 100%;
     height: auto;
 

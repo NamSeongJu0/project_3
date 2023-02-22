@@ -157,35 +157,36 @@ $(function() {
 
 
 // 스크롤 이벤트
-$(document).ready(function () {
-    $(window).scroll(function () {
-        $('#sub_bottom > ul >li').each(function () {
-            var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 2;
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
+$(function() {
+    $(window).scroll(function() {
+        var croll = $(this).scrollTop();
+        
+        console.log(croll);
+        var bal = $(".book_info");
 
-            if (bottom_of_window > bottom_of_element) {
-                $(this).css('background-color', "#ddd");
-            }
-        });
 
-        $('#Featured').each(function () {
-            var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 2;
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
+        if(croll > 620) {
+            $('.book_info > ul li').eq(0).addClass('roll');
+        }
+        else {
+            $('.book_info > ul li').eq(0).removeClass('roll');
+        }
 
-            if (bottom_of_window > bottom_of_element) {
-                $(this).animate({'opacity': '1'}, 750);
-            }
-        });
+        if(croll > 1439) {
+            $('.review_info > ul li').eq(1).addClass('roll');
+        }
+        else {
+            $('.review_info > ul li').eq(1).removeClass('roll');
+        }
 
-        $('#Deals').each(function () {
-            var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 2;
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-            if (bottom_of_window > bottom_of_element) {
-                $(this).animate({'opacity': '1'}, 750);
-            }
-        });
+        if(croll > 2850) {
+            $('.table_info > ul li').eq(2).addClass('roll');
+        }
+        else {
+            $('.table_info > ul li').eq(2).removeClass('roll');
+        }
     });
+    
 });
 
 
