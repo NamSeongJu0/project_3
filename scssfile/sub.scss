@@ -132,6 +132,53 @@
                         flex-direction: column;
                         border-bottom: 1px solid #afafaf;
                         margin-right: 30px;
+                        position: relative;
+
+                        &::after {
+                            content: "";
+                            border-bottom: 1px solid #000000 !important;
+                            position: absolute;
+                            bottom: 0;
+                            width: 100%;
+                            height: 100%;
+                            opacity: 0;
+                            
+                        }
+
+                        &:hover:after {
+                            animation: a_line 0.75s  forwards linear;
+                        }
+
+                        @keyframes a_line {
+                            0% {
+                                width: 0%;
+                                opacity: 1;
+                            }
+
+                            25% {
+                                width: 25%;
+                                opacity: 1;
+                            }
+
+                            50% {
+                                width: 50%;
+                                opacity: 1;
+                            }
+
+                            75% {
+                                width: 75%;
+                                opacity: 1;
+                            }
+
+                            100% {
+                                width: 100%;
+                                opacity: 1;
+                            }
+                        }
+
+                        &:hover {
+                            cursor: pointer;
+                        }
                     }
                 }
             }
