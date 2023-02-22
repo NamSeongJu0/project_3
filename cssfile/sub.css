@@ -272,7 +272,7 @@ footer .contents .footer1 ul li a:hover {
   width: 620px;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   box-sizing: border-box;
@@ -283,7 +283,7 @@ footer .contents .footer1 ul li a:hover {
   width: 100%;
   height: 354px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   flex-direction: column;
 }
@@ -335,7 +335,7 @@ footer .contents .footer1 ul li a:hover {
 }
 #Photo .photo_book .sub_info .subinfo .option_box .option::after {
   content: "";
-  border-bottom: 1px solid #000000 !important;
+  border-bottom: 1px solid #000000;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -343,7 +343,7 @@ footer .contents .footer1 ul li a:hover {
   opacity: 0;
 }
 #Photo .photo_book .sub_info .subinfo .option_box .option:hover:after {
-  animation: a_line 0.75s forwards linear;
+  animation: a_line 0.5s forwards linear;
 }
 @keyframes a_line {
   0% {
@@ -412,8 +412,15 @@ footer .contents .footer1 ul li a:hover {
   line-height: 20px;
   text-align: center;
 }
+#Photo .photo_book .sub_info .sb_box .buttons .button input {
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+  text-align: center;
+  border-style: none;
+}
 #Photo .photo_book .sub_info .sb_box .buttons .button span:nth-of-type(1):hover,
-#Photo .photo_book .sub_info .sb_box .buttons .button span:nth-of-type(3):hover {
+#Photo .photo_book .sub_info .sb_box .buttons .button span:nth-of-type(2):hover {
   cursor: pointer;
 }
 #Photo .photo_book .sub_info .sb_box .buttons .button1 {
@@ -447,20 +454,20 @@ footer .contents .footer1 ul li a:hover {
   }
 }
 #Photo .photo_book .sub_info .sum {
-  width: 150px;
+  width: 200px;
   height: 50px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 #Photo .photo_book .sub_info .sum span {
-  margin: 0 30px 0 20px;
+  width: 70px;
 }
 #Photo .photo_book .sub_info .icon_share {
   width: 420px;
   height: 40px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 #Photo .photo_book .sub_info .icon_share .add, #Photo .photo_book .sub_info .icon_share .share {
@@ -659,9 +666,9 @@ footer .contents .footer1 ul li a:hover {
   width: 50%;
   height: 100%;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: flex-end;
   flex-direction: column;
+  margin-left: 20px;
 }
 #Customer_R .reviews .review_star .custom .custom1 {
   width: 70%;
@@ -669,6 +676,7 @@ footer .contents .footer1 ul li a:hover {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin: 10px 0;
 }
 #Customer_R .reviews .review_star .custom .custom1 span {
   font-size: 16px;
@@ -680,15 +688,6 @@ footer .contents .footer1 ul li a:hover {
   border-radius: 15px;
   position: relative;
   margin: 0 15px;
-}
-#Customer_R .reviews .review_star .custom .custom1 .cus_bar .cus_bar:nth-of-type(3) {
-  margin-right: 7px;
-}
-#Customer_R .reviews .review_star .custom .custom1 .cus_bar:nth-of-type(4) {
-  margin-right: 7px;
-}
-#Customer_R .reviews .review_star .custom .custom1 .cus_bar:nth-of-type(5) {
-  margin-right: 7px;
 }
 #Customer_R .reviews .review_star .custom .custom1 .cus_bar::after {
   content: "";
