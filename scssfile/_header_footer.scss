@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 1vw;
+    // font-size: 1vw;
     scroll-behavior: smooth;
 }
 
@@ -42,13 +42,13 @@ header {
     height: auto;
 
     .contents {
-        width: 80%;
-        height: auto;
+        width: 1525px;
+        height: 135px;
         margin: 0 auto;
 
         #topbar {
-            width: 100%;
-            height: 3vw;
+            width: 1525px;
+            height: 38px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -89,7 +89,7 @@ header {
 
     #nav {
         width: 100%;
-        height: 4vw;
+        height: 77px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -169,7 +169,7 @@ footer {
     height: auto;
 
     .contents{
-        width: 80%;
+        width: 1525px;
         height: auto;
         margin: 0 auto;
         display: flex;

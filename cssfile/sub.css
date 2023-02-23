@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 1vw;
   scroll-behavior: smooth;
 }
 
@@ -25,13 +24,13 @@ header {
   height: auto;
 }
 header .contents {
-  width: 80%;
-  height: auto;
+  width: 1525px;
+  height: 135px;
   margin: 0 auto;
 }
 header .contents #topbar {
-  width: 100%;
-  height: 3vw;
+  width: 1525px;
+  height: 38px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,7 +64,7 @@ header .contents #topbar .top_bar_icon i:hover {
 }
 header #nav {
   width: 100%;
-  height: 4vw;
+  height: 77px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -131,7 +130,7 @@ footer {
   height: auto;
 }
 footer .contents {
-  width: 80%;
+  width: 1525px;
   height: auto;
   margin: 0 auto;
   display: flex;
@@ -230,7 +229,7 @@ footer .contents .footer1 ul li a:hover {
   border-bottom: 1px solid #afafaf;
 }
 #Sub_top ul {
-  width: 80%;
+  width: 1525px;
   height: 100%;
   display: flex;
   justify-content: space-around;
@@ -247,7 +246,7 @@ footer .contents .footer1 ul li a:hover {
   border-bottom: 1px solid #afafaf;
 }
 #Photo .photo_book {
-  width: 80%;
+  width: 1525px;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -304,6 +303,10 @@ footer .contents .footer1 ul li a:hover {
 #Photo .photo_book .sub_info .subinfo .img_text span {
   color: #ff0000;
   font-size: 16px;
+}
+#Photo .photo_book .sub_info .subinfo h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
 }
 #Photo .photo_book .sub_info .subinfo p {
   font-size: 16px;
@@ -473,43 +476,55 @@ footer .contents .footer1 ul li a:hover {
   justify-content: flex-start;
   align-items: center;
 }
-#Photo .photo_book .sub_info .icon_share .add, #Photo .photo_book .sub_info .icon_share .share {
+#Photo .photo_book .sub_info .icon_share .add,
+#Photo .photo_book .sub_info .icon_share .share {
   width: 200px;
   height: 40px;
   line-height: 40px;
 }
-#Photo .photo_book .sub_info .icon_share .add a, #Photo .photo_book .sub_info .icon_share .share a {
+#Photo .photo_book .sub_info .icon_share .add a,
+#Photo .photo_book .sub_info .icon_share .share a {
   width: 100%;
   height: 100%;
 }
-#Photo .photo_book .sub_info .icon_share .add i, #Photo .photo_book .sub_info .icon_share .share i {
+#Photo .photo_book .sub_info .icon_share .add i,
+#Photo .photo_book .sub_info .icon_share .share i {
   padding-right: 10px;
 }
-#Photo .photo_book .sub_info .icon_share .add i:hover, #Photo .photo_book .sub_info .icon_share .share i:hover {
+#Photo .photo_book .sub_info .icon_share .add i:hover,
+#Photo .photo_book .sub_info .icon_share .share i:hover {
   color: lightpink;
   transition: all 0.5s ease;
 }
 
-#sub_bottom {
+#sub_bottom0,
+#sub_bottom1,
+#sub_bottom2 {
   width: 100%;
   height: 60px;
   border-bottom: 1px solid #afafaf;
 }
-#sub_bottom ul {
-  width: 80%;
+#sub_bottom0 ul,
+#sub_bottom1 ul,
+#sub_bottom2 ul {
+  width: 1525px;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
 }
-#sub_bottom ul li {
-  width: 10%;
+#sub_bottom0 ul li,
+#sub_bottom1 ul li,
+#sub_bottom2 ul li {
+  width: 152px;
   height: 100%;
   text-align: center;
   line-height: 60px;
 }
-#sub_bottom ul li a {
+#sub_bottom0 ul li a,
+#sub_bottom1 ul li a,
+#sub_bottom2 ul li a {
   font-size: 1rem;
 }
 
@@ -523,7 +538,7 @@ footer .contents .footer1 ul li a:hover {
   border-bottom: 1px solid #afafaf;
 }
 #Book_info1 .social {
-  width: 55%;
+  width: 1046px;
   height: 900px;
   display: flex;
   justify-content: space-evenly;
@@ -575,6 +590,7 @@ footer .contents .footer1 ul li a:hover {
   height: auto;
 }
 #Customer_R .reviews {
+  width: 1643px;
   height: auto;
   display: flex;
   justify-content: flex-end;
@@ -696,7 +712,15 @@ footer .contents .footer1 ul li a:hover {
   position: relative;
   margin: 0 15px;
 }
-#Customer_R .reviews .review_star .custom .custom1 .cus_bar::after {
+#Customer_R .reviews .review_star .custom .custom1 .cus_bar1::after {
+  content: "";
+  width: 120px;
+  height: 100%;
+  background-color: #ffb224;
+  border-radius: 15px;
+  position: absolute;
+}
+#Customer_R .reviews .review_star .custom .custom1 .cus_bar2::after {
   content: "";
   width: 100px;
   height: 100%;
@@ -704,14 +728,38 @@ footer .contents .footer1 ul li a:hover {
   border-radius: 15px;
   position: absolute;
 }
+#Customer_R .reviews .review_star .custom .custom1 .cus_bar3::after {
+  content: "";
+  width: 70px;
+  height: 100%;
+  background-color: #ffb224;
+  border-radius: 15px;
+  position: absolute;
+}
+#Customer_R .reviews .review_star .custom .custom1 .cus_bar4::after {
+  content: "";
+  width: 55px;
+  height: 100%;
+  background-color: #ffb224;
+  border-radius: 15px;
+  position: absolute;
+}
+#Customer_R .reviews .review_star .custom .custom1 .cus_bar5::after {
+  content: "";
+  width: 30px;
+  height: 100%;
+  background-color: #ffb224;
+  border-radius: 15px;
+  position: absolute;
+}
 
 #Review_info1 {
-  width: 100%;
+  width: 1903px;
   height: auto;
   border-bottom: 1px solid #afafaf;
 }
 #Review_info1 .reviews_1 {
-  width: 50%;
+  width: 1046px;
   height: 950px;
   display: flex;
   justify-content: space-evenly;
@@ -771,7 +819,7 @@ footer .contents .footer1 ul li a:hover {
   margin: 0 8px;
 }
 #Review_info1 .re_input {
-  width: 50%;
+  width: 951px;
   height: 420px;
   margin: 0 auto;
 }
@@ -788,16 +836,21 @@ footer .contents .footer1 ul li a:hover {
   font-size: 18px;
   margin: 15px 0;
 }
+#Review_info1 .re_input .input_box .re_star1 {
+  height: 24px;
+}
 #Review_info1 .re_input .input_box .re_star2 {
   position: absolute;
   z-index: -1;
   bottom: 0%;
   display: none;
+  height: 24px;
 }
 #Review_info1 .re_input p {
   margin-left: 20px;
 }
-#Review_info1 .re_input textarea, #Review_info1 .re_input .re_btn {
+#Review_info1 .re_input textarea,
+#Review_info1 .re_input .re_btn {
   margin: 10px 0 10px 20px;
 }
 #Review_info1 .re_input .re_btn {
@@ -831,13 +884,47 @@ footer .contents .footer1 ul li a:hover {
   }
 }
 
+#table1 {
+  width: 1903px;
+  height: auto;
+}
+#table1 table {
+  width: 60%;
+  height: 700px;
+  border: 1px solid #afafaf;
+  margin: 70px auto;
+  border-collapse: collapse;
+}
+#table1 table tbody {
+  width: 100%;
+  height: 100%;
+}
+#table1 table tbody th,
+#table1 table tbody td {
+  border: 1px solid #afafaf;
+}
+#table1 table tbody th {
+  background-color: #ddd;
+}
+#table1 table tbody td ul {
+  box-sizing: border-box;
+  padding: 5px;
+}
+#table1 table tbody td ul li {
+  font-size: 13px;
+  box-sizing: border-box;
+  padding: 3px;
+  list-style: circle;
+  margin-left: 25px;
+}
+
 #Bestseller {
-  width: 80%;
+  width: 1525px;
   height: auto;
   margin: 200px auto;
 }
 #Bestseller h1 {
-  font-size: 2.5rem;
+  font-size: 50px;
   margin-bottom: 30px;
 }
 #Bestseller .booklist {
@@ -929,35 +1016,4 @@ footer .contents .footer1 ul li a:hover {
   transition: all 0.5s ease;
   background-color: lightpink;
   cursor: pointer;
-}
-
-#table1 {
-  width: 100%;
-  height: auto;
-}
-#table1 table {
-  width: 60%;
-  height: 700px;
-  border: 1px solid #afafaf;
-  margin: 70px auto;
-  border-collapse: collapse;
-}
-#table1 table tbody {
-  width: 100%;
-  height: 100%;
-}
-#table1 table tbody th, #table1 table tbody td {
-  border: 1px solid #afafaf;
-}
-#table1 table tbody th td ul, #table1 table tbody td td ul {
-  box-sizing: border-box;
-  padding: 5px;
-}
-#table1 table tbody th td ul li, #table1 table tbody td td ul li {
-  font-size: 5px;
-  box-sizing: border-box;
-  padding: 5px;
-}
-#table1 table tbody th td ul li::marker, #table1 table tbody td td ul li::marker {
-  list-style: circle;
 }

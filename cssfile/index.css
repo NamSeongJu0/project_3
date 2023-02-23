@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 1vw;
   scroll-behavior: smooth;
 }
 
@@ -25,13 +24,13 @@ header {
   height: auto;
 }
 header .contents {
-  width: 80%;
-  height: auto;
+  width: 1525px;
+  height: 135px;
   margin: 0 auto;
 }
 header .contents #topbar {
-  width: 100%;
-  height: 3vw;
+  width: 1525px;
+  height: 38px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,7 +64,7 @@ header .contents #topbar .top_bar_icon i:hover {
 }
 header #nav {
   width: 100%;
-  height: 4vw;
+  height: 77px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -131,7 +130,7 @@ footer {
   height: auto;
 }
 footer .contents {
-  width: 80%;
+  width: 1525px;
   height: auto;
   margin: 0 auto;
   display: flex;
@@ -233,7 +232,7 @@ footer .contents .footer1 ul li a:hover {
   margin-bottom: 100px;
 }
 #main_slide .swiper {
-  width: 100%;
+  width: 1200px;
   height: 100%;
 }
 #main_slide .swiper-slide {
@@ -242,7 +241,7 @@ footer .contents .footer1 ul li a:hover {
 }
 #main_slide .swiper-slide img {
   display: block;
-  width: 100%;
+  width: 575px;
 }
 #main_slide .slide {
   width: 1200px;
@@ -262,7 +261,7 @@ footer .contents .footer1 ul li a:hover {
   align-items: center;
 }
 #main_slide .slide .slide_box .slide_b1 .slide_b1_1 {
-  width: 35%;
+  width: 420px;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -270,11 +269,11 @@ footer .contents .footer1 ul li a:hover {
   flex-direction: column;
 }
 #main_slide .slide .slide_box .slide_b1 .slide_b1_1 p {
-  font-size: 1.2rem;
-  margin-bottom: 3%;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 #main_slide .slide .slide_box .slide_b1 .slide_b1_1 h1 {
-  font-size: 2.5rem;
+  font-size: 50px;
 }
 #main_slide .slide .slide_box .slide_b1 .slide_b1_1 .button {
   width: 180px;
@@ -284,7 +283,7 @@ footer .contents .footer1 ul li a:hover {
   color: white;
   border-radius: 15px;
   line-height: 40px;
-  margin-top: 3%;
+  margin-top: 10px;
 }
 #main_slide .slide .slide_box .slide_b1 .slide_b1_1 .button:hover {
   cursor: pointer;
@@ -308,12 +307,12 @@ footer .contents .footer1 ul li a:hover {
   }
 }
 #main_slide .slide .slide_box .slide_b1 .slide_img {
-  width: 60%;
+  width: 720px;
   height: 100%;
   position: relative;
 }
 #main_slide .slide .slide_box .slide_b1 .slide_img img {
-  width: 80%;
+  width: 576px;
   height: 80%;
 }
 #main_slide .slide .slide_box .slide_b1 .slide_box2 img:nth-of-type(2) {
@@ -432,12 +431,12 @@ footer .contents .footer1 ul li a:hover {
   margin: 200px auto;
 }
 #Cate .cate {
-  width: 80%;
+  width: 1525px;
   height: auto;
   margin: 0 auto;
 }
 #Cate .cate h1 {
-  font-size: 2.5rem;
+  font-size: 50px;
   text-align: center;
 }
 #Cate .cate .catebox {
@@ -481,13 +480,13 @@ footer .contents .footer1 ul li a:hover {
 }
 
 #Bestseller {
-  width: 80%;
+  width: 1525px;
   height: auto;
   margin: 200px auto;
   opacity: 0;
 }
 #Bestseller h1 {
-  font-size: 2.5rem;
+  font-size: 50px;
   margin-bottom: 30px;
 }
 #Bestseller .booklist {
@@ -582,28 +581,33 @@ footer .contents .footer1 ul li a:hover {
 }
 
 #Featured {
-  width: 100%;
+  width: 1525px;
   height: auto;
   opacity: 0;
+  text-align: center;
+  margin: 0 auto;
 }
 #Featured .Featured_1 {
-  width: 80%;
+  width: 1525px;
   height: auto;
   margin: 30px auto;
 }
 #Featured h1 {
-  font-size: 2.5rem;
+  width: 1525px;
+  font-size: 50px;
   margin-bottom: 30px;
   text-align: center;
+  margin: 0 auto;
 }
 #Featured .view {
-  width: 45%;
+  width: 1525px;
   height: 60px;
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin-bottom: 30px;
+  font-size: 20px;
 }
 #Featured .view li:hover {
   color: #dbc3c2 !important;
@@ -846,7 +850,7 @@ footer .contents .footer1 ul li a:hover {
 }
 
 #Deals {
-  width: 100%;
+  width: 1903px;
   height: 634px;
   background-color: #fff2e1;
   display: flex;
@@ -858,15 +862,15 @@ footer .contents .footer1 ul li a:hover {
   opacity: 0;
 }
 #Deals .head {
-  width: 80%;
+  width: 1525px;
   height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 3%;
+  margin-bottom: 20px;
 }
 #Deals .head h1 {
-  font-size: 2.5rem;
+  font-size: 50px;
 }
 #Deals .head span {
   font-size: 1rem;
@@ -973,13 +977,13 @@ footer .contents .footer1 ul li a:hover {
 }
 
 #Releases {
-  width: 100%;
+  width: 1903px;
   height: auto;
   margin: 10% auto;
   opacity: 0;
 }
 #Releases .releases {
-  width: 80%;
+  width: 1525px;
   height: auto;
   display: flex;
   justify-content: space-between;
@@ -993,10 +997,10 @@ footer .contents .footer1 ul li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 3%;
+  margin-bottom: 20px;
 }
 #Releases .releases .Rbox h1 {
-  font-size: 2.5rem;
+  font-size: 50px;
 }
 #Releases .releases .Rbox .R_ul {
   width: 40%;
@@ -1278,11 +1282,11 @@ footer .contents .footer1 ul li a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 15% auto;
+  margin: 250px auto;
   opacity: 0;
 }
 #Music .swiper {
-  width: 100%;
+  width: 1300px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -1293,10 +1297,10 @@ footer .contents .footer1 ul li a:hover {
   height: 180px;
 }
 #Music h1 {
-  width: 100%;
-  font-size: 2.5rem;
+  width: 1300px;
+  font-size: 50px;
   text-align: left;
-  margin-bottom: 3%;
+  margin-bottom: 20px;
 }
 #Music .music .M_list {
   width: 3031px;
@@ -1355,19 +1359,19 @@ footer .contents .footer1 ul li a:hover {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 10% auto;
+  margin: 200px auto;
   position: relative;
   opacity: 0;
 }
 #Favorite .favorite {
-  width: 100%;
+  width: 1300px;
   height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 #Favorite .favorite h1 {
-  font-size: 2.5rem;
+  font-size: 50px;
 }
 #Favorite .favorite span {
   font-size: 1rem;

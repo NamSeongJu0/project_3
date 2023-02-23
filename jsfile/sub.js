@@ -25,24 +25,13 @@ $(document).ready(function() {
 
                 $(".sb_box .story").eq(i).append("<p>" + str3 + "</p>");
 
-                // $(".sum2").append("<span>" + msg.documents[i].price + "원" + "</span>");
-
             }
 
         });
 });
 
 
-
-// +, - 클릭 시 효과
-$(document).ready(function() {
-    $(".m_btn, .p_btn").click(function() {
-        $(this).css("transform", "scale(1.2)");
-    });
-});
-
-
-// Social.text 가져오기
+// text 가져오기
 $(document).ready(function() {
     $.get("sub_text/social.txt", function (data) {
         $(".social").html(data);
@@ -52,6 +41,11 @@ $(document).ready(function() {
     $.get("sub_text/reviews.txt", function (data) {
         $(".reviews_1").html(data);
     });
+
+
+    $.get("sub_text/table.txt", function (data) {
+        $("#table1").html(data);
+    });
 });
 
 
@@ -59,20 +53,20 @@ $(document).ready(function() {
 // .re_input 부분
 $(function() {
 
-    $(".re_star1").hover(function(){
+    $(".re_star1 > img").hover(function(){
 
-        $(".re_star1 > img").attr('src', '../subimg/y_star.png');
+        $(".re_star1 > img").attr('src', './subimg/h_star.png');
 
-        $(this).attr('src', '../subimg/y_star.png');
+        $(this).attr('src', './subimg/y_star.png');
 
-        $(this).prevUntil().attr('src', '../subimg/y_star.png');
+        $(this).prevUntil().attr('src', './subimg/y_star.png');
 
     }, function() {
         $(".re_star1 > img").attr('src', '../subimg/h_star.png');
 
-        $(this).attr('src', '../subimg/h_star.png');
+        $(this).attr('src', '../subimg/y_star.png');
 
-        $(this).prevUntil().attr('src', '../subimg/h_star.png');
+        $(this).prevUntil().attr('src', '../subimg/y_star.png');
     }); 
 
 });
@@ -158,32 +152,33 @@ $(function() {
 
 // 스크롤 이벤트
 $(function() {
+
     $(window).scroll(function() {
         var croll = $(this).scrollTop();
         
         console.log(croll);
-        var bal = $(".book_info");
+        // var bal = $("#sub_bottom");
 
 
-        if(croll > 620) {
-            $('.book_info > ul li').eq(0).addClass('roll');
+        if(croll > 920) {
+            $('#sub_bottom0 > ul li').eq(0).addClass('roll');
         }
         else {
-            $('.book_info > ul li').eq(0).removeClass('roll');
+            $('#sub_bottom0 > ul li').eq(0).removeClass('roll');
         }
 
-        if(croll > 1439) {
-            $('.review_info > ul li').eq(1).addClass('roll');
+        if(croll > 1875) {
+            $('#sub_bottom1 > ul li').eq(1).addClass('roll');
         }
         else {
-            $('.review_info > ul li').eq(1).removeClass('roll');
+            $('#sub_bottom1 > ul li').eq(1).removeClass('roll');
         }
 
-        if(croll > 2850) {
-            $('.table_info > ul li').eq(2).addClass('roll');
+        if(croll > 3534) {
+            $('#sub_bottom2 > ul li').eq(2).addClass('roll');
         }
         else {
-            $('.table_info > ul li').eq(2).removeClass('roll');
+            $('#sub_bottom2 > ul li').eq(2).removeClass('roll');
         }
     });
     
