@@ -1352,7 +1352,12 @@ footer .contents .footer1 ul li a:hover {
   color: #ff0000;
 }
 
-#Favorite {
+.back {
+  width: 1903px;
+  height: auto;
+  background-color: #fff2e1;
+}
+.back #Favorite {
   width: 1300px;
   height: 400px;
   display: flex;
@@ -1363,29 +1368,29 @@ footer .contents .footer1 ul li a:hover {
   position: relative;
   opacity: 0;
 }
-#Favorite .favorite {
+.back #Favorite .favorite {
   width: 1300px;
   height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#Favorite .favorite h1 {
+.back #Favorite .favorite h1 {
   font-size: 50px;
 }
-#Favorite .favorite span {
+.back #Favorite .favorite span {
   font-size: 1rem;
 }
-#Favorite .favorite span:hover {
+.back #Favorite .favorite span:hover {
   color: #dbc3c2;
   transition: all 0.5s ease;
   cursor: pointer;
 }
-#Favorite .swiper {
+.back #Favorite .swiper {
   width: 100%;
   height: 100%;
 }
-#Favorite .swiper-slide {
+.back #Favorite .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -1396,7 +1401,7 @@ footer .contents .footer1 ul li a:hover {
   height: 180px;
   border-radius: 50%;
 }
-#Favorite .swiper-slide img {
+.back #Favorite .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
@@ -1406,36 +1411,37 @@ footer .contents .footer1 ul li a:hover {
   height: 150px;
   border-radius: 50%;
 }
-#Favorite .favor_box {
+.back #Favorite .favor_box {
   width: 908px;
   height: 200px;
   position: initial;
 }
-#Favorite .favor_box .favor_ul {
+.back #Favorite .favor_box .favor_ul {
   width: 1500px;
   height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-#Favorite .favor_box .favor_ul .favor_li {
+.back #Favorite .favor_box .favor_ul .favor_li {
   width: 150px;
   height: 180px;
+  background-color: #fff2e1;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-#Favorite .favor_box .favor_ul .favor_li img {
+.back #Favorite .favor_box .favor_ul .favor_li img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
 }
-#Favorite .favor_box .favor_ul .favor_li p {
+.back #Favorite .favor_box .favor_ul .favor_li p {
   font-size: 16px;
   text-align: center;
 }
-#Favorite .favor_box .swiper-button-next,
-#Favorite .favor_box .swiper-button-prev {
+.back #Favorite .favor_box .swiper-button-next,
+.back #Favorite .favor_box .swiper-button-prev {
   top: 62%;
 }
