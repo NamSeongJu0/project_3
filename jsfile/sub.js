@@ -138,7 +138,7 @@ $(function() {
             $('.price').val(1);
         }
 
-        else if(($('price').val()*10) % 10 != 0) {
+        else if(parseInt($('.price').val()*10) % 10 != 0) {
             alert("정수를 입력 해야 됩니다.");
             $('.price').val(1);
         }
