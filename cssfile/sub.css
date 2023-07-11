@@ -417,7 +417,6 @@ footer .contents .footer1 ul li a:hover {
   height: 20px;
   line-height: 20px;
   text-align: center;
-  user-select: none;
 }
 #Photo .photo_book .sub_info .sb_box .buttons .button input {
   width: 20px;
@@ -1018,5 +1017,3 @@ footer .contents .footer1 ul li a:hover {
   background-color: lightpink;
   cursor: pointer;
 }
-
-
