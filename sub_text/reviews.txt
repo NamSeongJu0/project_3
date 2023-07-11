@@ -7,11 +7,11 @@
 
 	<span>세상의 마지막 기차역...</span>
 
-	<img src = "../subimg/y_star.png" alt = "yellow star">
-	<img src = "../subimg/y_star.png" alt = "yellow star">
-	<img src = "../subimg/y_star.png" alt = "yellow star">
-	<img src = "../subimg/y_star.png" alt = "yellow star">
-	<img src = "../subimg/y_star.png" alt = "yellow star">
+	<img src = "subimg/y_star.png" alt = "yellow star">
+	<img src = "subimg/y_star.png" alt = "yellow star">
+	<img src = "subimg/y_star.png" alt = "yellow star">
+	<img src = "subimg/y_star.png" alt = "yellow star">
+	<img src = "subimg/y_star.png" alt = "yellow star">
 
 	<p>너무좋아요. 저뿐아니라 남편도잘읽었어요!</p>
 
@@ -38,11 +38,11 @@
 
 	<span>많은 생각이 드네요 ㅠㅠ</span>
 
-	<img src = "../subimg/y_star.png" alt = "yellow star">
-	<img src = "../subimg/y_star.png" alt = "yellow star">
-	<img src = "../subimg/y_star.png" alt = "yellow star">
-	<img src = "../subimg/y_star.png" alt = "yellow star">
-	<img src = "../subimg/y_star.png" alt = "yellow star">
+	<img src = "subimg/y_star.png" alt = "yellow star">
+	<img src = "subimg/y_star.png" alt = "yellow star">
+	<img src = "subimg/y_star.png" alt = "yellow star">
+	<img src = "subimg/y_star.png" alt = "yellow star">
+	<img src = "subimg/y_star.png" alt = "yellow star">
 
 	<p>되게 슬프네요.. 떠난 사람을 한번이라도 볼수만 있다면 뭐부터 하지 부터 생각해봤네요</p>
 
@@ -69,11 +69,11 @@
 
 	<span>잊고 있다가 봤는데 몰입이 장난 아니네요 ㄷㄷ</span>
 
-	<img src = "../subimg/y_star.png" alt = "yellow star">
-	<img src = "../subimg/y_star.png" alt = "yellow star">
-	<img src = "../subimg/y_star.png" alt = "yellow star">
-	<img src = "../subimg/y_star.png" alt = "yellow star">
-	<img src = "../subimg/y_star.png" alt = "yellow star">
+	<img src = "subimg/y_star.png" alt = "yellow star">
+	<img src = "subimg/y_star.png" alt = "yellow star">
+	<img src = "subimg/y_star.png" alt = "yellow star">
+	<img src = "subimg/y_star.png" alt = "yellow star">
+	<img src = "subimg/y_star.png" alt = "yellow star">
 
 	<p>
 		명절에일하다가 너무힘들어 자기전에 잠시폰열고 주문한책을
@@ -104,11 +104,11 @@
 
 	<span>정말 상상 그 이상이네요!</span>
 
-	<img src = "../subimg/y_star.png" alt = "yellow star">
-	<img src = "../subimg/y_star.png" alt = "yellow star">
-	<img src = "../subimg/y_star.png" alt = "yellow star">
-	<img src = "../subimg/y_star.png" alt = "yellow star">
-	<img src = "../subimg/y_star.png" alt = "yellow star">
+	<img src = "subimg/y_star.png" alt = "yellow star">
+	<img src = "subimg/y_star.png" alt = "yellow star">
+	<img src = "subimg/y_star.png" alt = "yellow star">
+	<img src = "subimg/y_star.png" alt = "yellow star">
+	<img src = "subimg/y_star.png" alt = "yellow star">
 
 	<p>
 		세상 끝에는 무엇이 기다리고 있을까 공연히 상상의 나래를 펼치게 한다
