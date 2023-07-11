@@ -55,18 +55,18 @@ $(function() {
 
     $(".re_star1 > img").hover(function(){
 
-        $(".re_star1 > img").attr('src', './subimg/h_star.png');
+        $(".re_star1 > img").attr('src', 'subimg/h_star.png');
 
-        $(this).attr('src', './subimg/y_star.png');
+        $(this).attr('src', 'subimg/y_star.png');
 
-        $(this).prevUntil().attr('src', './subimg/y_star.png');
+        $(this).prevUntil().attr('src', 'subimg/y_star.png');
 
     }, function() {
-        $(".re_star1 > img").attr('src', '../subimg/h_star.png');
+        $(".re_star1 > img").attr('src', 'subimg/h_star.png');
 
-        $(this).attr('src', '../subimg/y_star.png');
+        $(this).attr('src', 'subimg/y_star.png');
 
-        $(this).prevUntil().attr('src', '../subimg/y_star.png');
+        $(this).prevUntil().attr('src', 'subimg/y_star.png');
     }); 
 
 });
