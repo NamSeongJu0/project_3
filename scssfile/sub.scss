@@ -648,9 +648,10 @@
 
 
 #Review_info1 {
-    width: 1903px;
+    width: 100%;
     height: auto;
     border-bottom: 1px solid #afafaf;
+    margin: 0 auto;
 
     .reviews_1 {
         width: 1046px;
@@ -819,6 +820,7 @@
 #table1 {
     width: 1903px;
     height: auto;
+    margin: 0 auto;
 
     table {
         width: 60%;

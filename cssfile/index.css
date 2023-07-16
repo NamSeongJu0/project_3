@@ -122,7 +122,6 @@ header #nav .search input:hover {
   transform: scale(1.1);
   transition: all 0.5s ease;
   background-color: #dbc3c2;
-  cursor: pointer;
 }
 
 footer {
@@ -229,7 +228,7 @@ footer .contents .footer1 ul li a:hover {
   justify-content: center;
   align-items: center;
   background-image: url(../indeximg/bg.png);
-  margin-bottom: 100px;
+  margin: 0 auto;
 }
 #main_slide .swiper {
   width: 1200px;
@@ -1356,6 +1355,7 @@ footer .contents .footer1 ul li a:hover {
   width: 1903px;
   height: auto;
   background-color: #fff2e1;
+  margin: 0 auto;
 }
 .back #Favorite {
   width: 1300px;
