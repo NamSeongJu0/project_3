@@ -13,7 +13,7 @@
 	<img src = "subimg/y_star.png" alt = "yellow star">
 	<img src = "subimg/y_star.png" alt = "yellow star">
 
-	<p>너무좋아요. 저뿐아니라 남편도잘읽었어요!</p>
+	<p>너무좋아요. 저뿐 아니라 남편도 잘 읽었어요!</p>
 
 	<span>2022.02.17 | yn****</span>
 
