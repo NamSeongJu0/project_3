@@ -120,7 +120,7 @@ $(function() {
         $(".sum2").html("<span>" + sum2.toString().replace(/\B(?=(\d{3}) + (?!\d))/g, ",") + "원 </span>");
 
         if($('.price').val() < 1) {
-            alert("1권 이상 구매 해야 됩니다.");
+            alert("1권 이상 구매해야 됩니다.");
             $('.price').val(1);
         };
     });
